@@ -1,0 +1,27 @@
+{
+  "name": "nasim",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "\"# nasim.github.io\"",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^2.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/generalsoft/nasim.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/generalsoft/nasim.github.io/issues"
+  },
+  "homepage": "https://github.com/generalsoft/nasim.github.io#readme"
+}
