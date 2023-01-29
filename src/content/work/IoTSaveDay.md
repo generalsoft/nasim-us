@@ -16,6 +16,8 @@ tags:
 
 Our dryer’s timer broke just when it was needed most. We just had guests arrive with kids (the type that soil clothing by the minute). We just had a blizzard. And of course, it was the weekend; no repair shops. Much later, I found out that the manufacturer no longer had a replacement part for our dryer, but at the time, I thought I just needed a temporary fix. 
 
+![Schematics of the Dryer](/assets/content/IoT/schematics.png "Dryer's Schematics") 
+
 ## Research
 
 I opened the dryer’s front panel to look for an easy fix. At this point, I’d not known the cause of the breakdown; the symptom was that the dryer didn’t start. Inside the front panel, I found a schematic with some troubleshooting instructions. By the time I determined that the timer had gone bad, I also realized that the timer really was just a buzzer, coil, and about 7 relays on a board
@@ -35,7 +37,8 @@ It took about an hour to assemble the hardware (see Figure 2 Pi Dryer). Raspberr
 
 When pi boots, an rc.local launches Pi Dryer’s startup script which display’s the board’s IP address and initializes the relays. 
 
-    import socket
+```python
+    import socket 
     import fcntl
     import struct
 
@@ -49,9 +52,9 @@ When pi boots, an rc.local launches Pi Dryer’s startup script which display’
 
     lo =  get_ip_address('lo')
     wlan = get_ip_address('wlan0')
-
+```
 I can then ssh into the device and run timer script.
-
+```python
     import RPi.GPIO as GPIO
     import time
 
@@ -69,8 +72,7 @@ I can then ssh into the device and run timer script.
     GPIO.output(relay_pins['one'], GPIO.HIGH)
     time.sleep(cycle_time)
     GPIO.output(relay_pins['one'], GPIO.LOW)
-
-
+```
 ## Conclusion
 
 This was a very simple project to make and pretty unintelligent at that. But it was very useful, at least for me. By the way, I’d bought Raspberry PI Zero for one dollar. (Altogether, about $25 worth of components). 
