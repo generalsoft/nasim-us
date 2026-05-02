@@ -1,0 +1,36 @@
+---
+import { getCollection } from 'astro:content';
+
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+import ContactCTA from '../components/ContactCTA.astro';
+import PortfolioPreview from '../components/PortfolioPreview.astro';
+import Hero from '../components/Hero.astro';
+import Grid from '../components/Grid.astro';
+
+const hobbies = (await getCollection('hobby')).sort(
+	(a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf()
+);
+---
+
+<BaseLayout title="Hobby | Abid Nasim" description="Personal hobby projects and tinkering">
+	<div class="stack gap-20">
+		<main class="wrapper stack gap-8">
+			<Hero
+				title="Hobby"
+				tagline="Side projects and experiments built for curiosity and fun."
+				align="start"
+			/>
+			<Grid variant="offset">
+				{
+					hobbies.map((item) => (
+						<li>
+							<PortfolioPreview project={item} basePath="/hobby" />
+						</li>
+					))
+				}
+			</Grid>
+		</main>
+		<ContactCTA />
+	</div>
+</BaseLayout>

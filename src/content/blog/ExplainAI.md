@@ -1,7 +1,7 @@
 ---
 title: Explaining AI Hallucinations
 publishDate: 2023-09-17 00:00:00
-img: /assets/content/AI/aihal.jpg
+img: /assets/content/blogs/AI/aihal.jpg
 img_alt: AI Hallucination
 description: |
   How and why of AI Halucination

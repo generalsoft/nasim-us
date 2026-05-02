@@ -1,7 +1,7 @@
 ---
 title: IoT Saves the Day
 publishDate: 2017-03-19 00:00:00
-img: /assets/content/IoT/pidryer.jpg
+img: /assets/content/hobbies/IoT/pidryer.jpg
 img_alt: Raspberry PI and Relay for Dryer
 description: |
   How a Raspberry PI was used to keep Dryer running
@@ -16,7 +16,7 @@ tags:
 
 Our dryer’s timer broke just when it was needed most. We just had guests arrive with kids (the type that soil clothing by the minute). We just had a blizzard. And of course, it was the weekend; no repair shops. Much later, I found out that the manufacturer no longer had a replacement part for our dryer, but at the time, I thought I just needed a temporary fix. 
 
-![Schematics of the Dryer](/assets/content/IoT/schematics.png "Dryer's Schematics") 
+![Schematics of the Dryer](/assets/content/hobbies/IoT/schematics.png "Dryer's Schematics") 
 
 ## Research
 
