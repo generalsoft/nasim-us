@@ -70,6 +70,15 @@ jobs:
             --site "${{ steps.pages.outputs.origin }}" \
             --base "${{ steps.pages.outputs.base_path }}"
         working-directory: ${{ env.BUILD_PATH }}
+      - name: Verify dist directory
+        run: |
+          if [ ! -d "dist" ]; then
+            echo "ERROR: dist directory not found after build!"
+            exit 1
+          fi
+          echo "Build successful. Dist contents:"
+          ls -la dist
+        working-directory: ${{ env.BUILD_PATH }}
       - name: Debug dist
         run: |
           echo "PWD:"
