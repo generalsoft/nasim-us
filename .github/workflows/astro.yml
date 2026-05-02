@@ -70,6 +70,14 @@ jobs:
             --site "${{ steps.pages.outputs.origin }}" \
             --base "${{ steps.pages.outputs.base_path }}"
         working-directory: ${{ env.BUILD_PATH }}
+      - name: Debug dist
+        run: |
+          echo "PWD:"
+          pwd
+          echo "All files:"
+          ls -la
+          echo "Dist:"
+          ls -la dist || echo "dist missing"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
