@@ -74,6 +74,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: ${{ env.BUILD_PATH }}/dist
+          name: github-pages
 
   deploy:
     environment:
@@ -81,8 +82,11 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     needs: build
     runs-on: ubuntu-latest
-    name: Deploy
     steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: github-pages
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v3
