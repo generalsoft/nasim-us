@@ -7,10 +7,16 @@ import ContactCTA from '../components/ContactCTA.astro';
 import PortfolioPreview from '../components/PortfolioPreview.astro';
 import Hero from '../components/Hero.astro';
 import Grid from '../components/Grid.astro';
+import ImageCarousel from '../components/ImageCarousel.astro';
 
 const posts = (await getCollection('blog')).sort(
 	(a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf()
 );
+
+const postImages = posts.map((p) => ({
+  src: p.data.img,
+  href: `/blog/${p.slug}`,
+}));
 ---
 
 <BaseLayout title="Blog | Abid Nasim" description="Read Nasim's latest blog posts">
@@ -21,6 +27,7 @@ const posts = (await getCollection('blog')).sort(
 				tagline="Thoughts, experiments, and practical write-ups on AI and engineering."
 				align="start"
 			/>
+			<ImageCarousel images={postImages} alt="Blog post preview" />
 			<Grid variant="offset">
 				{
 					posts.map((post) => (

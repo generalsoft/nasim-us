@@ -7,10 +7,16 @@ import ContactCTA from '../components/ContactCTA.astro';
 import PortfolioPreview from '../components/PortfolioPreview.astro';
 import Hero from '../components/Hero.astro';
 import Grid from '../components/Grid.astro';
+import ImageCarousel from '../components/ImageCarousel.astro';
 
 const projects = (await getCollection('work')).sort(
 	(a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf()
 );
+
+const projectImages = projects.map((p) => ({
+  src: p.data.img,
+  href: `/work/${p.slug}`,
+}));
 ---
 
 <BaseLayout
@@ -24,6 +30,7 @@ const projects = (await getCollection('work')).sort(
 				tagline="See my most recent projects below to get an idea of my past experience."
 				align="start"
 			/>
+			<ImageCarousel images={projectImages} alt="Project preview" />
 			<Grid variant="offset">
 				{
 					projects.map((project) => (

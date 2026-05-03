@@ -1,0 +1,154 @@
+---
+interface Props {
+  images: { src: string; href?: string }[];
+  alt?: string;
+}
+
+const { images, alt = '' } = Astro.props;
+---
+
+<div class="carousel" data-carousel>
+  <div class="track" data-track>
+    {images.map(({ src, href }) => (
+      href ? (
+        <a class="slide-link" href={href}>
+          <img class="slide" src={src} alt={alt} loading="lazy" decoding="async" />
+        </a>
+      ) : (
+        <img class="slide" src={src} alt={alt} loading="lazy" decoding="async" />
+      )
+    ))}
+  </div>
+  <nav class="dots" data-dots>
+    {images.map((_, i) => (
+      <button class="dot" data-dot data-index={i} aria-label={`Slide ${i + 1}`}></button>
+    ))}
+  </nav>
+</div>
+
+<style>
+  .carousel {
+    --carousel-width: min(48rem, 100%);
+    width: var(--carousel-width);
+    margin-inline: auto;
+    position: relative;
+  }
+
+  .track {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    border-radius: 0.75rem;
+    border: 1px solid var(--gray-800);
+  }
+
+  .track::-webkit-scrollbar {
+    display: none;
+  }
+
+  .track {
+    scrollbar-width: none;
+  }
+
+  .slide-link {
+    scroll-snap-align: start;
+    flex: 0 0 100%;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+  }
+
+  .slide {
+    scroll-snap-align: start;
+    flex: 0 0 100%;
+    width: 100%;
+    object-fit: contain;
+    background: var(--gray-950);
+  }
+
+  .dots {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+  }
+
+  .dot {
+    width: 0.625rem;
+    height: 0.625rem;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    background: var(--gray-600);
+    transition: background var(--theme-transition);
+  }
+
+  .dot:hover,
+  .dot.active {
+    background: var(--gray-300);
+  }
+</style>
+
+<script>
+  class ImageCarousel {
+    constructor(el) {
+      this.el = el;
+      this.track = el.querySelector('[data-track]');
+      this.dots = [...el.querySelectorAll('[data-dot]')];
+      this.slides = [...el.querySelectorAll('.slide')];
+      this.index = 0;
+      this.interval = null;
+      this.delay = 4000;
+
+      if (this.slides.length < 2) return;
+
+      this.dots.forEach((dot) => {
+        dot.addEventListener('click', () => this.goTo(Number(dot.dataset.index)));
+      });
+
+      el.addEventListener('mouseenter', () => this.pause());
+      el.addEventListener('mouseleave', () => this.play());
+      el.addEventListener('touchstart', () => this.pause(), { passive: true });
+
+      this.track.addEventListener('scroll', () => this.syncFromScroll(), { passive: true });
+
+      this.goTo(0);
+      this.play();
+    }
+
+    goTo(i) {
+      this.index = i;
+      this.track.scrollTo({ left: this.track.clientWidth * i, behavior: 'smooth' });
+      this.updateDots();
+    }
+
+    next() {
+      this.goTo((this.index + 1) % this.slides.length);
+    }
+
+    syncFromScroll() {
+      const i = Math.round(this.track.scrollLeft / this.track.clientWidth);
+      if (i !== this.index) {
+        this.index = i;
+        this.updateDots();
+      }
+    }
+
+    updateDots() {
+      this.dots.forEach((d, i) => d.classList.toggle('active', i === this.index));
+    }
+
+    play() {
+      this.pause();
+      this.interval = setInterval(() => this.next(), this.delay);
+    }
+
+    pause() {
+      clearInterval(this.interval);
+      this.interval = null;
+    }
+  }
+
+  document.querySelectorAll('[data-carousel]').forEach((el) => new ImageCarousel(el));
+</script>
