@@ -23,7 +23,7 @@ const iconLinks: { label: string; href: string; icon: IconProps['icon']; target:
 <nav>
 	<div class="menu-header">
 		<a href="/" class="site-title">
-			<Icon icon="terminal-window" color="var(--accent-regular)" size="1.6em" gradient />
+			<img class="site-logo" src="/assets/logo.png" alt="" />
 			Abid Nasim
 		</a>
 		<menu-button>
@@ -135,6 +135,14 @@ const iconLinks: { label: string; href: string; icon: IconProps['icon']; target:
 		line-height: 1.1;
 		color: var(--gray-0);
 		text-decoration: none;
+		font-size: 1.15em;
+	}
+
+	.site-logo {
+		height: 1.6em;
+		width: auto;
+		display: block;
+		object-fit: contain;
 	}
 
 	.menu-button {
@@ -250,7 +258,7 @@ const iconLinks: { label: string; href: string; icon: IconProps['icon']; target:
 		}
 
 		.site-title {
-			font-size: var(--text-lg);
+			font-size: calc(var(--text-lg) * 1.15);
 		}
 
 		#menu-content {

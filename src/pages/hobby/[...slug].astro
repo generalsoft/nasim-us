@@ -28,7 +28,7 @@ const { Content } = await entry.render();
 	<div class="stack gap-20">
 		<div class="stack gap-15">
 			<header>
-				<div class="wrapper stack gap-2">
+				<div class="full-bleed stack gap-2">
 					<a class="back-link" href="/hobby/"><Icon icon="arrow-left" /> Hobby</a>
 					<Hero title={entry.data.title} align="start">
 						<div class="details">
@@ -40,7 +40,7 @@ const { Content } = await entry.render();
 					</Hero>
 				</div>
 			</header>
-			<main class="wrapper">
+			<main class="full-bleed">
 				<div class="stack gap-10 content">
 					{entry.data.img && <img src={entry.data.img} alt={entry.data.img_alt || ''} />}
 					<div class="content">
@@ -83,8 +83,8 @@ const { Content } = await entry.render();
 	}
 
 	.content {
-		max-width: 65ch;
-		margin-inline: auto;
+		max-width: none;
+		width: 100%;
 	}
 
 	.content > :global(* + *) {
@@ -100,10 +100,13 @@ const { Content } = await entry.render();
 	}
 
 	.content :global(img) {
-		border-radius: 1.5rem;
+		display: block;
+		width: 100%;
+		border-radius: 0;
 		box-shadow: var(--shadow-sm);
 		background: var(--gradient-subtle);
 		border: 1px solid var(--gray-800);
+		border-inline: none;
 	}
 
 	.content :global(blockquote) {

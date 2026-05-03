@@ -197,6 +197,14 @@ h5 {
 	padding-inline: 1.5rem;
 }
 
+/* Full viewport width — no side padding or max-width (e.g. article bodies) */
+.full-bleed {
+	width: 80%;
+	max-width: none;
+	margin-inline: 0;
+	padding-inline: 0;
+}
+
 .stack {
 	display: flex;
 	flex-direction: column;

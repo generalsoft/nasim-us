@@ -11,15 +11,15 @@ tags:
   - Natural Language
 ---
 
-When people say AI can "think," it helps to unpack what those quotes are doing. Humans think with bodies, moods, ethics, goals, and a lifetime of embodied experience. Today’s mainstream AI mostly does something narrower and more mechanical—yet strangely powerful—and it pays to describe it plainly.
+I admit I used to be an AI skeptic. I have been programming computers since 1982. My first computer had one kilobytes of RAM and on boot, it took away 300 bytes, leaving me with 700 bytes. I knew precisely what I wrote, where it went, and what it did. How can AI do things that its developers were surprised to find that it could? 
 
 ## What "thinking" means for a chatbot-style model
 
 A large language model (LLM) is trained to **predict plausible next symbols**—usually fragments of words (tokens)—given what it has seen so far. That training compresses staggering amounts of text into billions of numerical knobs (weights) inside a neural network.
 
-At inference time, there is **non persistent inner voice** debating options in English. Math happens: embeddings turn text into vectors; layers blend those vectors with patterns learned during training; the model emits a probability distribution over the **next token**; a sampling procedure picks one; and the cycle repeats until a stop condition. The familiar "streaming answer" on screen is literally that loop, one chip operation after another.
+Natural language is a model of the universe. When I say “I am driving a car,” I’m not just producing words—I’m encoding a structured representation of reality: a singular subject (“I”), a contemporary verb (“am driving”), and an object (“a car”), all linked through a predicate or lack thereof, that specifies an action occurring in the world. In other words, language breaks experience into roles and relations that we can manipulate symbolically.
 
-So in a skeptical sense: it doesn't *understand* the way you do when you miss someone, or when you remember the smell of rain. In the engineering sense: it **generates structured language** that often tracks human intent, facts, and style well enough to be useful—and sometimes convincingly creative.
+This is a big part of why AI can appear to “think.” Modern language models are trained on vast amounts of such representations, learning the statistical patterns that connect subjects, predicates, verbs, objects, and broader semantic structures to situations, intentions, causes, and outcomes. As they generate responses, they aren’t experiencing the world, but they are operating over these learned linguistic models in a way that resembles reasoning—predicting what subject comes next, what predicate is plausible, what object fits the context, and how a sequence of ideas should unfold. The result is behavior that feels like thought, because it is built on the same grammatical and relational scaffolding (subject–verb–object, predicate logic, semantic roles) that humans use to compress and reason about reality.
 
 ## Why it can feel like reasoning
 

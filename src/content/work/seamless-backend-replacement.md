@@ -12,7 +12,7 @@ img_alt: Expo Booth Layout System
 
 ## Context
 
-In 1999, we had a production front-end that depended on a legacy backend with tight coupling to database behavior, query timing, and response shape. Replacing it directly would have broken multiple user workflows, so the key requirement was simple: **the front-end should not notice**.
+In 1999, my client, an exhibitions management company, was running a third party product namely, ExpoCad, to manage exhibition space on desktops. The product used an xBase as the backend. An executive decided to publish the exhibition space online using a Java pluggin, not realizing the increased volumes could not be handled by the backend. So the logical option was to change the backend with something scalable, like Oracle. However, the vendor declined to make the upgrade. I was taked to do just that, subject to the condition that **the front-end should not notice the change**.
 
 ## Goal
 
@@ -41,13 +41,13 @@ I designed a compatibility-first rollout with three tracks in parallel:
 ## Challenges
 
 - Legacy behavior was under-documented and partly encoded in query side effects.
-- A few front-end screens relied on implicit ordering that was not guaranteed by default in the new stack.
+- A few front-end screens relied on implicit ordering that was not guaranteed by default in the new stack. xBase is a record based RDBMS. Oracle is/was based on SQL. 
 - Operational confidence required side-by-side checks for a sustained period, not just spot tests.
 
 ## Outcome
 
-The backend was replaced transparently, with no required front-end rewrite and no user-visible disruption during the transition window. The team gained a maintainable data platform while preserving the stability expectations of an established UI.
+The backend was replaced transparently, with no required front-end rewrite and no user-visible disruption during the transition window. It was a solo project. I had the prototype working in two months.
 
 ## Key takeaway
 
-When replacing foundational systems, **compatibility is a product feature**. Treating behavior parity as a first-class deliverable made the migration safer and faster overall.
+When replacing foundational systems, **compatibility is a product feature**. Treating behavior parity as a first-class deliverable made the port safer and faster overall.
