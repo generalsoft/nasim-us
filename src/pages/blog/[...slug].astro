@@ -101,12 +101,26 @@ const { Content } = await entry.render();
 
 	.content :global(img) {
 		display: block;
-		width: 100%;
-		border-radius: 0;
+		max-width: 50%;
+		margin-inline: auto;
+		border-radius: 0.5rem;
 		box-shadow: var(--shadow-sm);
 		background: var(--gradient-subtle);
 		border: 1px solid var(--gray-800);
-		border-inline: none;
+	}
+
+	.content :global(p) {
+		font-family: var(--font-handwriting);
+		font-size: var(--text-2xl);
+		font-weight: 500;
+		line-height: 1.7;
+	}
+
+	.content :global(li) {
+		font-family: var(--font-handwriting);
+		font-size: var(--text-xl);
+		font-weight: 500;
+		line-height: 1.7;
 	}
 
 	.content :global(blockquote) {
