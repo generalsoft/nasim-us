@@ -14,6 +14,13 @@ const { title, description } = Astro.props;
 <html lang="en">
 	<head>
 		<MainHead title={title} description={description} />
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-FNN01YQ1B4"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'G-FNN01YQ1B4');
+		</script>
 	</head>
 	<body>
 		<div class="stack backgrounds">
