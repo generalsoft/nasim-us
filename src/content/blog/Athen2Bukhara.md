@@ -4,7 +4,7 @@ publishDate: 2026-05-07 00:00:00
 img: /assets/content/blogs/CRAJe.jpg
 img_alt: From Athens to Bukhara
 description: |
-  How Platonic and Aristotlian works transform and transfer from Athens to Bukhara and beyond
+  How Platonic and Aristotelian works transform and transfer from Athens to Bukhara and beyond
 tags:
   - Philosophy
   - Al Farabi
