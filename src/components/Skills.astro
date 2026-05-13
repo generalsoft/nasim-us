@@ -1,29 +1,30 @@
 ---
 import Icon from './Icon.astro';
+import { t } from '../i18n/utils';
+import type { Locale } from '../i18n/ui';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
 ---
 
 <section class="box skills">
 	<div class="stack gap-2 lg:gap-4">
 		<Icon icon="terminal-window" color="var(--accent-regular)" size="2.5rem" gradient />
-		<h2>Platform Engineer</h2>
-		<p>As a cross-platform developer, I have routinely integrated multiple Line of Business (LOB) applications.&nbsp;
-			And I have migrated on-prem to cloud, many many times. Meanwhile, I enjoy writing code in more than one language.  
-		</p>
+		<h2>{t(locale, 'skills.platform.title')}</h2>
+		<p>{t(locale, 'skills.platform.desc')}</p>
 	</div>
 	<div class="stack gap-2 lg:gap-4">
 		<Icon icon="strategy" color="var(--accent-regular)" size="2.5rem" gradient />
-		<h2>Architect</h2>
-		<p>I have deliverd over 30 projecs. In nearly 50% of them, I had to propose an architecture and defend it.&nbsp;
-			Defending your solution architure is akin to defending for doctorate thesis, albeit perhaps less rigorous. &nbsp;
-			Archtecture is about important things. Lower latency or higher throughput? Data Integrity or Data Availability? &nbsp;
-			Which of the dimensions are important among Time, Cost and Quality?
-		</p>
+		<h2>{t(locale, 'skills.architect.title')}</h2>
+		<p>{t(locale, 'skills.architect.desc')}</p>
 	</div>
 	<div class="stack gap-2 lg:gap-4">
 		<Icon icon="rocket-launch" color="var(--accent-regular)" size="2.5rem" gradient />
-		<h2>Project Management</h2>
-		<p>While I am at heart a techie, I am also a people's person. I am a programmers' programmer. I understand&nbsp;
-			you can suboptimize an organizational unit in order to optimize the enterprise.</p>
+		<h2>{t(locale, 'skills.pm.title')}</h2>
+		<p>{t(locale, 'skills.pm.desc')}</p>
 	</div>
 </section>
 

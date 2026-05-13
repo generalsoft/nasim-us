@@ -10,6 +10,8 @@ export const ui = {
     'nav.about': 'About',
     'nav.menu': 'Menu',
 
+    'site.name': 'Abid Nasim',
+
     'home.title': 'Home | Abid Nasim',
     'home.hero': 'Hello, my name is Abid Nasim',
     'home.tagline': 'I am a full stack Platform Engineer.',
@@ -54,6 +56,16 @@ export const ui = {
 
     'lang.switch': 'العربية',
     'lang.code': 'ar',
+
+    'skills.platform.title': 'Platform Engineer',
+    'skills.platform.desc': 'As a cross-platform developer, I have routinely integrated multiple Line of Business (LOB) applications. And I have migrated on-prem to cloud, many many times. Meanwhile, I enjoy writing code in more than one language.',
+    'skills.architect.title': 'Architect',
+    'skills.architect.desc': 'I have delivered over 30 projects. In nearly 50% of them, I had to propose an architecture and defend it. Defending your solution architecture is akin to defending for doctorate thesis, albeit perhaps less rigorous. Architecture is about important things. Lower latency or higher throughput? Data Integrity or Data Availability? Which of the dimensions are important among Time, Cost and Quality?',
+    'skills.pm.title': 'Project Management',
+    'skills.pm.desc': 'While I am at heart a techie, I am also a people person. I am a programmers\' programmer. I understand you can suboptimize an organizational unit in order to optimize the enterprise.',
+
+    'cta.heading': 'Interested in working together?',
+    'cta.button': 'Send Me a Message',
   },
 
   ar: {
@@ -63,6 +75,8 @@ export const ui = {
     'nav.hobby': 'الهوايات',
     'nav.about': 'حول',
     'nav.menu': 'القائمة',
+
+    'site.name': 'عابد نسيم',
 
     'home.title': 'الرئيسية | عابد نسيم',
     'home.hero': 'مرحباً، اسمي عابد نسيم',
@@ -108,6 +122,16 @@ export const ui = {
 
     'lang.switch': 'English',
     'lang.code': 'en',
+
+    'skills.platform.title': 'مهندس منصات',
+    'skills.platform.desc': 'كمطور متعدد المنصات، قمت بدمج العديد من تطبيقات خطوط الأعمال (LOB) بشكل روتيني. كما قمت بنقل الأنظمة من البنية المحلية إلى السحابة مرات عديدة. وفي الوقت نفسه، أستمتع بكتابة الكود بأكثر من لغة.',
+    'skills.architect.title': 'مهندس الحلول',
+    'skills.architect.desc': 'قمت بتسليم أكثر من 30 مشروعاً. في حوالي نصفها، كان عليّ اقتراح هندسة معمارية للحل والدفاع عنها. الدفاع عن هندسة الحل يشبه الدفاع عن أطروحة الدكتوراه، وإن كان أقل صرامة. الهندسة المعمارية تتعلق بالأمور المهمة: زمن انتقال أقل أم إنتاجية أعلى؟ سلامة البيانات أم توفر البيانات؟ أي الأبعاد أهم: الوقت أم التكلفة أم الجودة؟',
+    'skills.pm.title': 'إدارة المشاريع',
+    'skills.pm.desc': 'بينما أنا تقني في الصميم، فأنا أيضاً شخص اجتماعي بطبيعتي. أنا مبرمج للمبرمجين. أفهم أنه يمكن تحسين وحدة تنظيمية فرعية من أجل تحسين المؤسسة ككل.',
+
+    'cta.heading': 'مهتم بالعمل معاً؟',
+    'cta.button': 'أرسل لي رسالة',
   },
 } as const;
 
