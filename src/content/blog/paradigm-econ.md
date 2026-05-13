@@ -2,7 +2,7 @@
 title: Geopolitical Paradigm Shift
 description: |
     From “It’s the Economy, Stupid” to “It’s Cheaper to Trade Than to Rent-Seek” — The Shifting Economics of Power
-publishDate: 2026-05-05
+publishDate: 2026-05-05 00:00:00
 img: /assets/content/blogs/UeWuP.jpg
 img_alt: Models are needed to "see" the universe
 tags:

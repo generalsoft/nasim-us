@@ -263,3 +263,44 @@ h5 {
 		gap: 12rem;
 	}
 }
+
+/* ── RTL (Arabic) overrides ────────────────────────────────── */
+
+html[dir='rtl'] {
+	--font-body: 'Aref Ruqaa', 'Segoe UI', Tahoma, Geneva, Verdana, var(--font-system);
+	--font-brand: 'Aref Ruqaa', 'Segoe UI', Tahoma, Geneva, Verdana, var(--font-system);
+	direction: rtl;
+	text-align: right;
+
+	/* Body-level Arabic text — bumped 2 notches; headings stay at original size */
+	--text-sm:   1.1875rem;
+	--text-base: 1.375rem;
+	--text-md:   1.75rem;
+}
+
+html[dir='rtl'] .hero,
+html[dir='rtl'] header,
+html[dir='rtl'] main,
+html[dir='rtl'] section,
+html[dir='rtl'] footer {
+	direction: rtl;
+}
+
+html[dir='rtl'] .wrapper {
+	margin-inline: auto;
+	padding-inline: 1.5rem;
+}
+
+/* Flip directional icons in RTL */
+html[dir='rtl'] [data-icon='arrow-right'] svg {
+	transform: scaleX(-1);
+}
+
+html[dir='rtl'] [data-icon='arrow-left'] svg {
+	transform: scaleX(-1);
+}
+
+/* Back link arrow direction in RTL */
+html[dir='rtl'] .back-link svg {
+	transform: scaleX(-1);
+}

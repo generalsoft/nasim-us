@@ -1,0 +1,63 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+import ContactCTA from '../../components/ContactCTA.astro';
+import Hero from '../../components/Hero.astro';
+import { t } from '../../i18n/utils';
+
+const locale = 'ar';
+---
+
+<BaseLayout title={t(locale, 'about.title')} description={t(locale, 'about.desc')}>
+	<div class="stack gap-20">
+		<main class="wrapper about">
+			<Hero
+				title={t(locale, 'about.heading')}
+				tagline={t(locale, 'about.tagline')}
+			>
+				<img
+					width="50%"
+					height="auto"
+					src="/assets/an-office.jpg"
+					alt="في العمل"
+				/>
+			</Hero>
+
+			<section>
+				<h2 class="section-title">{t(locale, 'about.background')}</h2>
+				<div class="content">
+					<p>
+						حصلت على أول حاسوب لي عام ١٩٨٢. كان Sinclair ZX81 بذاكرة ١ كيلوبايت. عند تشغيله،&nbsp;
+						كان النظام يستهلك ٣٠٠ بايت ويترك لك ٧٠٠ بايت فقط للبرمجة.
+					</p>
+					<p>
+						منذ ذلك الحين وأنا شغوف بالتقنية. ثم اكتشفت Linux وأمضيت ساعات لا تحصى في تعلمه&nbsp;
+						وتحديثه باستمرار.
+					</p>
+					<p>
+						اليوم، بعد العمل على عشرات المشاريع، أنا مهتم أكثر بالعطاء ومشاركة الدروس التي&nbsp;
+						تعلمتها بالطريقة الصعبة.
+					</p>
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">{t(locale, 'about.education')}</h2>
+				<div class="content">
+					<p>ماجستير إدارة الأعمال</p>
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">{t(locale, 'about.certifications')}</h2>
+				<div class="content">
+					<p>MCP, MCAD, MCSD</p>
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">{t(locale, 'about.abilities')}</h2>
+				<div class="content">
+					<p>مهندس معماري، مدير مشاريع، وقائد تقني.</p>
+				</div>
+			</section>
+		</main>
+	</div>
+</BaseLayout>

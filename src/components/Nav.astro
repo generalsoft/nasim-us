@@ -1,14 +1,23 @@
 ---
 import Icon, { Props as IconProps } from './Icon.astro';
 import ThemeToggle from './ThemeToggle.astro';
+import LanguageSwitcher from './LanguageSwitcher.astro';
+import { type Locale } from '../i18n/ui';
+import { t, localizedHref } from '../i18n/utils';
 
-/** Main menu items */
-const textLinks: { label: string; href: string }[] = [
-	{ label: 'Home', href: '/' },
-	{ label: 'Work', href: '/work/' },
-	{ label: 'Blog', href: '/blog/' },
-	{ label: 'Hobby', href: '/hobby/' },
-	{ label: 'About', href: '/about/' },
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+
+/** Main menu items — keys are in ui.ts translation dictionary */
+const textLinks: { key: string; href: string }[] = [
+	{ key: 'nav.home',  href: '/' },
+	{ key: 'nav.work',  href: '/work/' },
+	{ key: 'nav.blog',  href: '/blog/' },
+	{ key: 'nav.hobby', href: '/hobby/' },
+	{ key: 'nav.about', href: '/about/' },
 ];
 
 /** Icon links to social media — edit these with links to your profiles! */
@@ -22,14 +31,14 @@ const iconLinks: { label: string; href: string; icon: IconProps['icon']; target:
 
 <nav>
 	<div class="menu-header">
-		<a href="/" class="site-title">
+		<a href={localizedHref(locale, '/')} class="site-title">
 			<img class="site-logo" src="/assets/logo.png" alt="" />
 			Abid Nasim
 		</a>
 		<menu-button>
 			<template>
 				<button class="menu-button" aria-expanded="false">
-					<span class="sr-only">Menu</span>
+					<span class="sr-only">{t(locale, 'nav.menu')}</span>
 					<Icon icon="list" />
 				</button>
 			</template>
@@ -38,24 +47,27 @@ const iconLinks: { label: string; href: string; icon: IconProps['icon']; target:
 	<div id="menu-content">
 		<ul class="nav-items">
 			{
-				textLinks.map(({ label, href }) => (
-					<li>
-						<a
-							aria-current={Astro.url.pathname === href}
-							class:list={[
-								'link',
-								{
-									active:
-										Astro.url.pathname === href ||
-										(href !== '/' && Astro.url.pathname.startsWith(href)),
-								},
-							]}
-							href={href}
-						>
-							{label}
-						</a>
-					</li>
-				))
+				textLinks.map(({ key, href }) => {
+					const resolvedHref = localizedHref(locale, href);
+					return (
+						<li>
+							<a
+								aria-current={Astro.url.pathname === resolvedHref}
+								class:list={[
+									'link',
+									{
+										active:
+											Astro.url.pathname === resolvedHref ||
+											(href !== '/' && Astro.url.pathname.startsWith(resolvedHref)),
+									},
+								]}
+								href={resolvedHref}
+							>
+								{t(locale, key as any)}
+							</a>
+						</li>
+					);
+				})
 			}
 		</ul>
 		<div class="menu-footer">
@@ -70,12 +82,23 @@ const iconLinks: { label: string; href: string; icon: IconProps['icon']; target:
 				}
 			</div>
 
-			<div class="theme-toggle">
-				<ThemeToggle />
+			<div class="lang-and-theme">
+				<LanguageSwitcher />
+				<div class="theme-toggle">
+					<ThemeToggle />
+				</div>
 			</div>
 		</div>
 	</div>
 </nav>
+
+<style>
+	.lang-and-theme {
+		display: flex;
+		align-items: center;
+		gap: 0.75rem;
+	}
+</style>
 
 <script>
 	class MenuButton extends HTMLElement {

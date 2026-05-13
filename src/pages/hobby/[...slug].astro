@@ -7,6 +7,7 @@ import ContactCTA from '../../components/ContactCTA.astro';
 import Hero from '../../components/Hero.astro';
 import Icon from '../../components/Icon.astro';
 import Pill from '../../components/Pill.astro';
+import ScrollHint from '../../components/ScrollHint.astro';
 
 interface Props {
 	entry: CollectionEntry<'hobby'>;
@@ -14,7 +15,8 @@ interface Props {
 
 export async function getStaticPaths() {
 	const hobbies = await getCollection('hobby');
-	return hobbies.map((entry) => ({
+	const enHobbies = hobbies.filter((h) => (h.data.lang ?? 'en') === 'en');
+	return enHobbies.map((entry) => ({
 		params: { slug: entry.slug },
 		props: { entry },
 	}));
@@ -40,10 +42,11 @@ const { Content } = await entry.render();
 					</Hero>
 				</div>
 			</header>
+			<ScrollHint />
 			<main class="full-bleed">
 				<div class="stack gap-10 content">
 					{entry.data.img && <img src={entry.data.img} alt={entry.data.img_alt || ''} />}
-					<div class="content">
+					<div class="content" id="content">
 						<Content />
 					</div>
 				</div>

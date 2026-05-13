@@ -9,13 +9,22 @@ import Hero from '../components/Hero.astro';
 import Grid from '../components/Grid.astro';
 import ImageCarousel from '../components/ImageCarousel.astro';
 
-const hobbies = (await getCollection('hobby')).sort(
+const hobbies = (await getCollection('hobby'))
+	.filter((h) => (h.data.lang ?? 'en') === 'en')
+	.sort(
 	(a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf()
 );
 
 const hobbyImages = hobbies.map((h) => ({
   src: h.data.img,
   href: `/hobby/${h.slug}`,
+}));
+
+const carouselArticles = hobbies.map((h) => ({
+  title: h.data.title,
+  description: h.data.description,
+  href: `/hobby/${h.slug}`,
+  tags: h.data.tags ?? [],
 }));
 ---
 
@@ -27,7 +36,8 @@ const hobbyImages = hobbies.map((h) => ({
 				tagline="Side projects and experiments built for curiosity and fun."
 				align="start"
 			/>
-			<ImageCarousel images={hobbyImages} alt="Hobby project preview" />
+			<div id="carousel-articles-data" data-articles={JSON.stringify(carouselArticles)} hidden></div>
+		<ImageCarousel images={hobbyImages} alt="Hobby project preview" />
 			<Grid variant="offset">
 				{
 					hobbies.map((item) => (

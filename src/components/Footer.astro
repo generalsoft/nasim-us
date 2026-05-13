@@ -1,11 +1,19 @@
 ---
+import { type Locale } from '../i18n/ui';
+import { t } from '../i18n/utils';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
 const currentYear = new Date().getFullYear();
 ---
 
 <footer>
 	<div class="group">
-		<p>&copy; Copyrights: Abid Nasim, {currentYear}</p>
-		<p><a href="https://generalsoft.ae" target="_blank" rel="noopener noreferrer">powered by Generalsoft</a></p>
+		<p>&copy; {t(locale, 'footer.copyright')}, {currentYear}</p>
+		<p><a href="https://generalsoft.ae" target="_blank" rel="noopener noreferrer">{t(locale, 'footer.powered')}</a></p>
 	</div>
 	<!-- <p class="socials">
 		<a href="https://twitter.com/generalsoft" target="_blank"> Twitter</a>

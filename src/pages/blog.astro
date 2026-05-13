@@ -9,13 +9,22 @@ import Hero from '../components/Hero.astro';
 import Grid from '../components/Grid.astro';
 import ImageCarousel from '../components/ImageCarousel.astro';
 
-const posts = (await getCollection('blog')).sort(
+const posts = (await getCollection('blog'))
+	.filter((p) => (p.data.lang ?? 'en') === 'en')
+	.sort(
 	(a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf()
 );
 
 const postImages = posts.map((p) => ({
   src: p.data.img,
   href: `/blog/${p.slug}`,
+}));
+
+const carouselArticles = posts.map((p) => ({
+  title: p.data.title,
+  description: p.data.description,
+  href: `/blog/${p.slug}`,
+  tags: p.data.tags ?? [],
 }));
 ---
 
@@ -27,7 +36,8 @@ const postImages = posts.map((p) => ({
 				tagline="Thoughts, experiments, and practical write-ups on AI and engineering."
 				align="start"
 			/>
-			<ImageCarousel images={postImages} alt="Blog post preview" />
+			<div id="carousel-articles-data" data-articles={JSON.stringify(carouselArticles)} hidden></div>
+		<ImageCarousel images={postImages} alt="Blog post preview" />
 			<Grid variant="offset">
 				{
 					posts.map((post) => (

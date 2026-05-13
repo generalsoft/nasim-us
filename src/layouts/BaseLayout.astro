@@ -2,16 +2,22 @@
 import MainHead from '../components/MainHead.astro';
 import Nav from '../components/Nav.astro';
 import Footer from '../components/Footer.astro';
+import { getLocaleFromUrl } from '../i18n/utils';
+import type { Locale } from '../i18n/ui';
 
 interface Props {
   title?: string | undefined;
   description?: string | undefined;
 }
 
+const currentLocale = getLocaleFromUrl(Astro.url) as Locale;
+const dir = currentLocale === 'ar' ? 'rtl' : 'ltr';
+const lang = currentLocale;
+
 const { title, description } = Astro.props;
 ---
 
-<html lang="en">
+<html lang={lang} dir={dir}>
 	<head>
 		<MainHead title={title} description={description} />
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-FNN01YQ1B4"></script>
@@ -22,11 +28,11 @@ const { title, description } = Astro.props;
 			gtag('config', 'G-FNN01YQ1B4');
 		</script>
 	</head>
-	<body>
+	<body class:list={[currentLocale === 'ar' ? 'rtl' : '']}>
 		<div class="stack backgrounds">
-			<Nav />
+			<Nav locale={currentLocale} />
 			<slot />
-			<Footer />
+			<Footer locale={currentLocale} />
 		</div>
 
 		<script>

@@ -10,7 +10,7 @@ const { project, basePath = '/work' } = Astro.props;
 const { data, slug } = project;
 ---
 
-<a class="card" href={`${basePath}/${slug}`}>
+<a class="card" href={`${basePath}/${slug}#content`}>
 	<span class="title">{data.title}</span>
 	<img src={data.img} alt={data.img_alt || ''} loading="lazy" decoding="async" />
 </a>
