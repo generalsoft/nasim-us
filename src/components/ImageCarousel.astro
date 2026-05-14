@@ -10,9 +10,10 @@ interface Props {
   images: { src: string; href?: string }[];
   alt?: string;
   articles?: ArticleInfo[];
+  readMoreLabel?: string;
 }
 
-const { images, alt = '', articles = [] } = Astro.props;
+const { images, alt = '', articles = [], readMoreLabel = 'Read more' } = Astro.props;
 ---
 
 <div class="carousel" data-carousel>
@@ -39,20 +40,16 @@ const { images, alt = '', articles = [] } = Astro.props;
   </nav>
 </div>
 
-{
-  articles.length > 0 && (
-    <div class="carousel-detail" data-carousel-detail>
-      <div class="carousel-detail-inner">
-        <h3 class="carousel-detail-title" data-detail-title></h3>
-        <p class="carousel-detail-desc" data-detail-desc></p>
-        <div class="carousel-detail-tags" data-detail-tags></div>
-        <a class="carousel-detail-link" data-detail-link href="#">
-          Read more <span aria-hidden="true">→</span>
-        </a>
-      </div>
+  <div class="carousel-detail" data-carousel-detail>
+    <div class="carousel-detail-inner">
+      <h3 class="carousel-detail-title" data-detail-title></h3>
+      <p class="carousel-detail-desc" data-detail-desc></p>
+      <div class="carousel-detail-tags" data-detail-tags></div>
+      <a class="carousel-detail-link" data-detail-link href="#">
+        {readMoreLabel} <span aria-hidden="true">→</span>
+      </a>
     </div>
-  )
-}
+  </div>
 
 <style>
   .carousel {
@@ -65,8 +62,6 @@ const { images, alt = '', articles = [] } = Astro.props;
   .track {
     display: flex;
     overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
     border-radius: 0.75rem;
     border: 1px solid var(--gray-800);
   }
@@ -80,7 +75,6 @@ const { images, alt = '', articles = [] } = Astro.props;
   }
 
   .slide-link {
-    scroll-snap-align: start;
     flex: 0 0 100%;
     width: 100%;
     display: block;
@@ -88,7 +82,6 @@ const { images, alt = '', articles = [] } = Astro.props;
   }
 
   .slide {
-    scroll-snap-align: start;
     flex: 0 0 100%;
     width: 100%;
     object-fit: contain;
@@ -249,12 +242,18 @@ const { images, alt = '', articles = [] } = Astro.props;
 
     setArticles(articles) {
       this.articles = articles;
+      // Refresh detail for the current slide now that articles are available
+      this.showDetail(this.index);
     }
 
     goTo(i) {
       this.index = i;
-      this.track.scrollTo({ left: this.track.clientWidth * i, behavior: 'smooth' });
+      this.isScrolling = true;
+      this.slides[i].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
       this.updateDots();
+      // Clear the flag after smooth scroll completes (~500ms)
+      clearTimeout(this._scrollTimer);
+      this._scrollTimer = setTimeout(() => { this.isScrolling = false; }, 600);
     }
 
     next() {
@@ -264,6 +263,7 @@ const { images, alt = '', articles = [] } = Astro.props;
     }
 
     syncFromScroll() {
+      if (this.isScrolling) return;
       const i = Math.round(this.track.scrollLeft / this.track.clientWidth);
       if (i !== this.index) {
         this.index = i;

@@ -10,6 +10,19 @@ let pathWithoutLocale = Astro.url.pathname;
 if (currentLocale !== 'en') {
   pathWithoutLocale = Astro.url.pathname.replace('/' + currentLocale, '') || '/';
 }
+
+// Handle -ar suffix convention on content detail pages (e.g. /blog/how-ai-thinks ↔ /ar/blog/how-ai-thinks-ar)
+const segments = pathWithoutLocale.split('/').filter(Boolean);
+if (segments.length >= 2) {
+  const last = segments[segments.length - 1];
+  if (switchLocale === 'ar' && !last.endsWith('-ar')) {
+    segments[segments.length - 1] = last + '-ar';
+  } else if (switchLocale === 'en' && last.endsWith('-ar')) {
+    segments[segments.length - 1] = last.replace(/-ar$/, '');
+  }
+  pathWithoutLocale = '/' + segments.join('/');
+}
+
 const switchHref = localizedHref(switchLocale, pathWithoutLocale);
 ---
 

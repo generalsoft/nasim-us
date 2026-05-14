@@ -38,7 +38,7 @@ const carouselArticles = posts.map((p) => ({
 				align="start"
 			/>
 			<div id="carousel-articles-data" data-articles={JSON.stringify(carouselArticles)} hidden></div>
-		<ImageCarousel images={postImages} alt="معاينة مقال" />
+		<ImageCarousel images={postImages} alt="معاينة مقال" readMoreLabel={t(locale, 'carousel.readmore')} />
 			<Grid variant="offset">
 				{
 					posts.map((post) => (

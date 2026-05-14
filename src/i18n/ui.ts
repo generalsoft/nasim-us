@@ -66,6 +66,8 @@ export const ui = {
 
     'cta.heading': 'Interested in working together?',
     'cta.button': 'Send Me a Message',
+
+    'carousel.readmore': 'Read more',
   },
 
   ar: {
@@ -132,6 +134,8 @@ export const ui = {
 
     'cta.heading': 'مهتم بالعمل معاً؟',
     'cta.button': 'أرسل لي رسالة',
+
+    'carousel.readmore': 'اقرأ المزيد',
   },
 } as const;
 
