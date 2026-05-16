@@ -69,6 +69,7 @@
 	--font-body: 'Public Sans', var(--font-system);
 	--font-brand: Rubik, var(--font-system);
 	--font-handwriting: 'Caveat', cursive;
+	--font-arabic: 'Dubai', var(--font-system);
 
 	/* Transitions */
 	--theme-transition: 0.2s ease-in-out;
@@ -196,6 +197,19 @@ h5 {
 	max-width: 83rem;
 	margin-inline: auto;
 	padding-inline: 1.5rem;
+}
+
+/* Arabic / RTL font overrides */
+body.rtl {
+	font-family: var(--font-arabic);
+}
+
+body.rtl h1,
+body.rtl h2,
+body.rtl h3,
+body.rtl h4,
+body.rtl h5 {
+	font-family: var(--font-arabic);
 }
 
 /* Full viewport width — no side padding or max-width (e.g. article bodies) */
