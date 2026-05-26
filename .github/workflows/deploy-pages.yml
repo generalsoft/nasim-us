@@ -60,7 +60,7 @@ jobs:
           cache: ${{ steps.detect-package-manager.outputs.manager }}
           cache-dependency-path: |
             ${{ env.BUILD_PATH }}/pnpm-lock.yaml
-            ${{ env.BUILD_PATH }}/package-lock.json${{ env.BUILD_PATH }}/package-lock.json
+            ${{ env.BUILD_PATH }}/package-lock.json
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5   # updated from v3
