@@ -3,14 +3,14 @@ import type { CollectionEntry } from 'astro:content';
 
 interface Props {
 	project: CollectionEntry<'work' | 'blog' | 'hobby'>;
-	basePath?: '/work' | '/blog' | '/hobby';
+	basePath?: '/work' | '/blog' | '/hobby' | '/ar/work' | '/ar/blog' | '/ar/hobby';
 }
 
 const { project, basePath = '/work' } = Astro.props;
-const { data, slug } = project;
+const { data, id } = project;
 ---
 
-<a class="card" href={`${basePath}/${slug}#content`}>
+<a class="card" href={`${basePath}/${id}#content`}>
 	<span class="title">{data.title}</span>
 	<img src={data.img} alt={data.img_alt || ''} loading="lazy" decoding="async" />
 </a>
