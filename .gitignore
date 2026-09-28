@@ -1,0 +1,24 @@
+# macOS
+
+.DS_Store
+
+# Astro
+
+.astro/
+dist/
+src/
+
+# Environment variables
+
+.env
+.env.*
+!.env.example
+
+# Dependencies
+
+node_modules/
+
+# Local backups / generated data
+
+contacts_backup_*.json
+
