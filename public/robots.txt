@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://nasim.us/sitemap-index.xml
