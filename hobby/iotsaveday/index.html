@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.9.0 -->
+<title>IoT Saves the Day | Abid Nasim</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="IoT Saves the Day" />
+<meta name="author" content="Abid Nasim" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="How a Raspberry PI was used to keep Dryer running" />
+<meta name="twitter:description" property="og:description" content="How a Raspberry PI was used to keep Dryer running" />
+<link rel="canonical" href="https://nasim.us/hobby/iotsaveday/" />
+<meta property="og:url" content="https://nasim.us/hobby/iotsaveday/" />
+<meta property="og:site_name" content="Abid Nasim" />
+<meta property="og:image" content="https://nasim.us/assets/content/hobbies/IoT/pidryer.jpg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2017-03-19T00:00:00-07:00" />
+<meta property="article:modified_time" content="2017-03-19T00:00:00-07:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://nasim.us/assets/content/hobbies/IoT/pidryer.jpg" />
+<meta name="twitter:title" content="IoT Saves the Day" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Abid Nasim"},"dateModified":"2017-03-19T00:00:00-07:00","datePublished":"2017-03-19T00:00:00-07:00","description":"How a Raspberry PI was used to keep Dryer running","headline":"IoT Saves the Day","image":"https://nasim.us/assets/content/hobbies/IoT/pidryer.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://nasim.us/hobby/iotsaveday/"},"url":"https://nasim.us/hobby/iotsaveday/"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://nasim.us/feed.xml" title="Abid Nasim" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Abid Nasim</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/work/">My Work</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/hobby/">Hobby</a><a class="page-link" href="/about/">About</a><a class="page-link" href="/contact/">Contact</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">IoT Saves the Day</h1><p class="post-lead p-summary">How a Raspberry PI was used to keep Dryer running</p><p class="post-meta">
+      <time class="dt-published" datetime="2017-03-19T00:00:00-07:00" itemprop="datePublished">2017-03-19 00:00</time><span class="post-section"> • <a href="/hobby/">Hobby</a></span></p><ul class="tags"><li>#IoT</li><li>#RaspberryPI</li></ul></header><img class="post-cover" src="/assets/content/hobbies/IoT/pidryer.jpg" alt="Raspberry PI and Relay for Dryer"><div class="post-content e-content" itemprop="articleBody">
+    <h2 id="the-problem">The Problem</h2>
+
+<blockquote>
+  <p>Old tech out of LTS</p>
+</blockquote>
+
+<p>Our dryer’s timer broke just when it was needed most. We just had guests arrive with kids (the type that soil clothing by the minute). We just had a blizzard. And of course, it was the weekend; no repair shops. Much later, I found out that the manufacturer no longer had a replacement part for our dryer, but at the time, I thought I just needed a temporary fix.</p>
+
+<p><img src="/assets/content/hobbies/IoT/schematics.png" alt="Schematics of the Dryer" title="Dryer's Schematics" /></p>
+
+<h2 id="research">Research</h2>
+
+<p>I opened the dryer’s front panel to look for an easy fix. At this point, I’d not known the cause of the breakdown; the symptom was that the dryer didn’t start. Inside the front panel, I found a schematic with some troubleshooting instructions. By the time I determined that the timer had gone bad, I also realized that the timer really was just a buzzer, coil, and about 7 relays on a board</p>
+
+<h2 id="solution">Solution</h2>
+
+<p>Why not create an electronic version of timer; maybe not the entire timer replacement but just get one cycle to function. Fortunately, I’d all the gizmos I needed:</p>
+<ol>
+  <li>Raspberry pi Zero</li>
+  <li>Protoboard</li>
+  <li>Relay board</li>
+  <li>WiFi Adapter</li>
+  <li>I2C 4x20 Display. Sort of optional, but quite handy for feedback.</li>
+</ol>
+
+<h3 id="implemenation">Implemenation</h3>
+
+<p>It took about an hour to assemble the hardware (see Figure 2 Pi Dryer). Raspberry pi Zero is in the wooden case with room for protoboard. It is powered by AC/DC adapter using USB port A. WiFi adapter is connected with USB port B. Relay logic strip is connected to the appropriate GPIO pins, with first and last pins connected to ground and power (VCC) respectively. High Voltage end of the relays are connected to the dryer.</p>
+
+<p>When pi boots, an rc.local launches Pi Dryer’s startup script which display’s the board’s IP address and initializes the relays.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="kn">import</span> <span class="n">socket</span> 
+    <span class="kn">import</span> <span class="n">fcntl</span>
+    <span class="kn">import</span> <span class="n">struct</span>
+
+    <span class="k">def</span> <span class="nf">get_ip_address</span><span class="p">(</span><span class="n">ifname</span><span class="p">):</span>
+        <span class="n">s</span> <span class="o">=</span> <span class="n">socket</span><span class="p">.</span><span class="nf">socket</span><span class="p">(</span><span class="n">socket</span><span class="p">.</span><span class="n">AF_INET</span><span class="p">,</span> <span class="n">socket</span><span class="p">.</span><span class="n">SOCK_DGRAM</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">socket</span><span class="p">.</span><span class="nf">inet_ntoa</span><span class="p">(</span><span class="n">fcntl</span><span class="p">.</span><span class="nf">ioctl</span><span class="p">(</span>
+            <span class="n">s</span><span class="p">.</span><span class="nf">fileno</span><span class="p">(),</span>
+            <span class="mh">0x8915</span><span class="p">,</span>  <span class="c1"># SIOCGIFADDR
+</span>            <span class="n">struct</span><span class="p">.</span><span class="nf">pack</span><span class="p">(</span><span class="sh">'</span><span class="s">256s</span><span class="sh">'</span><span class="p">,</span> <span class="n">ifname</span><span class="p">[:</span><span class="mi">15</span><span class="p">])</span>
+        <span class="p">)[</span><span class="mi">20</span><span class="p">:</span><span class="mi">24</span><span class="p">])</span>
+
+    <span class="n">lo</span> <span class="o">=</span>  <span class="nf">get_ip_address</span><span class="p">(</span><span class="sh">'</span><span class="s">lo</span><span class="sh">'</span><span class="p">)</span>
+    <span class="n">wlan</span> <span class="o">=</span> <span class="nf">get_ip_address</span><span class="p">(</span><span class="sh">'</span><span class="s">wlan0</span><span class="sh">'</span><span class="p">)</span>
+</code></pre></div></div>
+<p>I can then ssh into the device and run timer script.</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="kn">import</span> <span class="n">RPi.GPIO</span> <span class="k">as</span> <span class="n">GPIO</span>
+    <span class="kn">import</span> <span class="n">time</span>
+
+    <span class="n">relay_pins</span> <span class="o">=</span> <span class="p">{</span><span class="sh">'</span><span class="s">one</span><span class="sh">'</span><span class="p">:</span> <span class="mi">11</span><span class="p">,</span> <span class="sh">'</span><span class="s">two</span><span class="sh">'</span><span class="p">:</span><span class="mi">7</span><span class="p">,</span> <span class="sh">'</span><span class="s">three</span><span class="sh">'</span><span class="p">:</span><span class="mi">12</span><span class="p">,</span> <span class="sh">'</span><span class="s">four</span><span class="sh">'</span><span class="p">:</span><span class="mi">16</span><span class="p">,</span> <span class="sh">'</span><span class="s">five</span><span class="sh">'</span><span class="p">:</span><span class="mi">18</span><span class="p">,</span> <span class="sh">'</span><span class="s">six</span><span class="sh">'</span><span class="p">:</span><span class="mi">22</span><span class="p">,</span> <span class="sh">'</span><span class="s">seven</span><span class="sh">'</span><span class="p">:</span><span class="mi">15</span><span class="p">,</span> <span class="sh">'</span><span class="s">eight</span><span class="sh">'</span><span class="p">:</span><span class="mi">13</span><span class="p">}</span>
+
+    <span class="n">GPIO</span><span class="p">.</span><span class="nf">setmode</span><span class="p">(</span><span class="n">GPIO</span><span class="p">.</span><span class="n">BOARD</span><span class="p">)</span>  <span class="c1"># use P1 header pin numbering convention
+</span>    <span class="n">GPIO</span><span class="p">.</span><span class="nf">setwarnings</span><span class="p">(</span><span class="bp">False</span><span class="p">)</span>   <span class="c1"># don't want to hear about how pins are already in use
+</span>
+    <span class="k">for</span> <span class="n">relay_pin</span><span class="p">,</span> <span class="n">board_pin</span> <span class="ow">in</span> <span class="n">relay_pins</span><span class="p">.</span><span class="nf">iteritems</span><span class="p">():</span>
+            <span class="n">GPIO</span><span class="p">.</span><span class="nf">setup</span><span class="p">(</span><span class="n">board_pin</span><span class="p">,</span> <span class="n">GPIO</span><span class="p">.</span><span class="n">OUT</span><span class="p">)</span>
+            <span class="n">GPIO</span><span class="p">.</span><span class="nf">output</span><span class="p">(</span><span class="n">board_pin</span><span class="p">,</span> <span class="n">GPIO</span><span class="p">.</span><span class="n">LOW</span><span class="p">)</span> <span class="c1"># turn off
+</span>
+    <span class="n">cycle_time</span> <span class="o">=</span> <span class="mf">1.0</span> <span class="c1"># in seconds
+</span>
+    <span class="n">GPIO</span><span class="p">.</span><span class="nf">output</span><span class="p">(</span><span class="n">relay_pins</span><span class="p">[</span><span class="sh">'</span><span class="s">one</span><span class="sh">'</span><span class="p">],</span> <span class="n">GPIO</span><span class="p">.</span><span class="n">HIGH</span><span class="p">)</span>
+    <span class="n">time</span><span class="p">.</span><span class="nf">sleep</span><span class="p">(</span><span class="n">cycle_time</span><span class="p">)</span>
+    <span class="n">GPIO</span><span class="p">.</span><span class="nf">output</span><span class="p">(</span><span class="n">relay_pins</span><span class="p">[</span><span class="sh">'</span><span class="s">one</span><span class="sh">'</span><span class="p">],</span> <span class="n">GPIO</span><span class="p">.</span><span class="n">LOW</span><span class="p">)</span>
+</code></pre></div></div>
+<h2 id="conclusion">Conclusion</h2>
+
+<p>This was a very simple project to make and pretty unintelligent at that. But it was very useful, at least for me. By the way, I’d bought Raspberry PI Zero for one dollar. (Altogether, about $25 worth of components).</p>
+
+  </div>
+
+  <a class="u-url" href="/hobby/iotsaveday/" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Abid Nasim</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">{&quot;name&quot;=&gt;&quot;Abid Nasim&quot;}</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Personal site of Abid Nasim (US)</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
