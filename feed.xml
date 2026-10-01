@@ -1,4 +1,208 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://nasim.us/feed.xml" rel="self" type="application/atom+xml" /><link href="https://nasim.us/" rel="alternate" type="text/html" hreflang="en" /><updated>2026-10-01T13:15:09-07:00</updated><id>https://nasim.us/feed.xml</id><title type="html">Abid Nasim</title><subtitle>Personal site of Abid Nasim (US)</subtitle><author><name>Abid Nasim</name></author><entry><title type="html">Greek Philosophy from Athens to Bukhara via Aleppo</title><link href="https://nasim.us/blog/athen2bukhara/" rel="alternate" type="text/html" title="Greek Philosophy from Athens to Bukhara via Aleppo" /><published>2026-05-07T00:00:00-07:00</published><updated>2026-05-07T00:00:00-07:00</updated><id>https://nasim.us/blog/athen2bukhara</id><content type="html" xml:base="https://nasim.us/blog/athen2bukhara/"><![CDATA[<h2 id="from-athens-to-bukhara-the-remarkable-journey-of-greek-philosophy">From Athens to Bukhara: The Remarkable Journey of Greek Philosophy</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://nasim.us/feed.xml" rel="self" type="application/atom+xml" /><link href="https://nasim.us/" rel="alternate" type="text/html" hreflang="en" /><updated>2026-10-01T14:48:33-07:00</updated><id>https://nasim.us/feed.xml</id><title type="html">Abid Nasim</title><subtitle>Personal site of Abid Nasim (US)</subtitle><author><name>Abid Nasim</name></author><entry><title type="html">When the Machine Speaks Our Language: From Ontology to Pedagogy</title><link href="https://nasim.us/blogs/AI/ontology2pedagogy/" rel="alternate" type="text/html" title="When the Machine Speaks Our Language: From Ontology to Pedagogy" /><published>2026-10-01T03:51:00-07:00</published><updated>2026-10-01T03:51:00-07:00</updated><id>https://nasim.us/blogs/AI/ontology-epistemology-pedagogy</id><content type="html" xml:base="https://nasim.us/blogs/AI/ontology2pedagogy/"><![CDATA[<h1 id="when-the-machine-speaks-our-language-from-ontology-to-pedagogy">When the Machine Speaks Our Language: From Ontology to Pedagogy</h1>
+
+<p>As with any genuinely new technology, <strong>ontology precedes epistemology — and pedagogy</strong> follows.</p>
+
+<p>We encounter something new before we fully understand what it means to know, learn, communicate, or teach in its presence. Generative AI is a particularly striking example because its most remarkable capability is not simply computation. It is <strong>language</strong>. Input is naive layman’s natural language, any language, and output is a properly composed coherent response.</p>
+
+<p>No other species possesses anything remotely comparable to the human faculty of language. And until November 2022, there had never been an entity other than the homo sapines, that could interact with us in our own language with anything approaching this level of fluency.</p>
+
+<p>I remain astonished by it.</p>
+
+<p>I can tell my developer to update, say, the “print routine,” and she may come back an hour later asking what exactly I meant. I can give my AI coding partners essentially the same instruction and almost immediately see the code changing in front of my eyes.</p>
+
+<p>This is more than a productivity improvement. Something fundamental has changed in the interface between humans and machines.</p>
+
+<p>We no longer necessarily have to translate our intentions into the machine’s language. We can increasingly communicate <strong>intent in ordinary language</strong>.</p>
+
+<p>And that is where things become philosophically interesting.</p>
+
+<h2 id="ontology--epistemology--pedagogy">Ontology → Epistemology → Pedagogy</h2>
+
+<p>A useful way of thinking about the educational consequences is:</p>
+
+<p><strong>Ontology → Epistemology → Pedagogy</strong></p>
+
+<p>First: <strong>What is this thing?</strong></p>
+
+<p>What sort of entity is an AI system? What does it mean for it to communicate with us? What does it mean for such a system to “understand”?</p>
+
+<p>Then: <strong>How do we know?</strong></p>
+
+<p>When an AI gives us an answer, what constitutes evidence that the answer is knowledge rather than a plausible linguistic construction? How do we distinguish competence from appearance of competence?</p>
+
+<p>And finally: <strong>How should we teach?</strong></p>
+
+<p>If students have access to systems that can produce fluent explanations, essays, solutions and arguments on demand, what exactly should education be assessing?</p>
+
+<p>The technology has moved extraordinarily quickly through the first of these stages. Our epistemology and pedagogy are still catching up.</p>
+
+<h2 id="the-problem-of-the-fluent-answer">The problem of the fluent answer</h2>
+
+<p>One useful guideline for educators may be to distinguish between different kinds of questions we ask AI.</p>
+
+<p>Consider the familiar <strong>W and H questions</strong>:</p>
+
+<p><strong>what, who, whose, whom, why, where, when, how.</strong></p>
+
+<p>AI is extraordinarily capable in some forms of inference, particularly in the <strong>how-to</strong> domain. It can generate procedures, transform them, combine them and adapt them at a scale and speed that is beyond what any individual human can normally manage.</p>
+
+<p>But the picture becomes more complicated when we ask what, who, why, where, when and whose.</p>
+
+<p>The <strong>why</strong> is particularly interesting.</p>
+
+<p>I can ask an AI to tell me a good joke, and the result can be hit or miss. But suppose I tell it a joke that I consider genuinely funny and ask:</p>
+
+<blockquote>
+  <p>Why is this joke good?</p>
+</blockquote>
+
+<p>The AI may give me an impressively precise explanation of its structure: the setup, the expectation, the incongruity, the timing, the reversal and so forth.</p>
+
+<p>But does its ability to explain <em>why</em> the joke works demonstrate that it understands <em>why</em> the joke works?</p>
+
+<p>That is a very different question. Reminds me of the late Prof. Searle’s Chinese Room though experiment.</p>
+
+<p>It takes us directly into epistemology.</p>
+
+<h2 id="the-chinese-room-comes-back">The Chinese Room comes back</h2>
+
+<p>John Searle’s famous <strong>Chinese Room</strong> thought experiment asks us to imagine a person who does not understand Chinese but has an enormous rule book telling them how to manipulate Chinese symbols. From outside the room, the person’s responses are indistinguishable from those of a Chinese speaker.</p>
+
+<p>Does the person understand Chinese?</p>
+
+<p>Searle’s answer is no.</p>
+
+<p>The thought experiment is controversial, but its relevance to AI education is striking.</p>
+
+<p>Suppose an AI gives an extraordinarily good explanation of a Chinese sentence, a mathematical proof, a joke, a poem or a scientific concept.</p>
+
+<p><strong>What evidence would justify our attribution of understanding?</strong></p>
+
+<p>We can make the test harder. Ask for explanations. Introduce counterfactuals. Change the assumptions. Challenge the answer. Ask the system to correct itself. Transfer the problem into another context.</p>
+
+<p>These tests can give us increasingly strong evidence of competence.</p>
+
+<p>But they don’t necessarily settle the philosophical question.</p>
+
+<p>A sufficiently sophisticated Chinese Room could, in principle, pass behavioural tests while someone could still argue that there is no genuine understanding inside the room.</p>
+
+<p>This is not merely an abstract philosophical problem. It has a direct educational analogue:</p>
+
+<blockquote>
+  <p><strong>How do we know that a student understands something rather than merely being able to produce the appropriate linguistic performance?</strong></p>
+</blockquote>
+
+<h2 id="the-student-and-the-ai">The student and the AI</h2>
+
+<p>Generative AI introduces a new version of this problem into education.</p>
+
+<p>A student can submit an articulate answer without having gone through the intellectual process that would make the knowledge genuinely theirs.</p>
+
+<p>This creates a peculiar form of <strong>impostor syndrome in reverse</strong>: the appearance of competence can be generated without the underlying competence necessarily being present.</p>
+
+<p>One response is the return of the <strong>viva voce</strong>.</p>
+
+<p>One school system in Scandinavia that I know uses oral follow-ups to written answers and assignments. The student must demonstrate that they understand and can defend what they have submitted.</p>
+
+<p>There is an obvious attraction to this approach.</p>
+
+<p>But I have one reservation: <strong>the viva may favour the natural orator.</strong></p>
+
+<p>We could solve the problem of AI-generated fluency only to introduce a bias toward human verbal fluency.</p>
+
+<p>A student who thinks deeply but communicates hesitantly may be disadvantaged relative to a naturally gifted speaker whose understanding is less substantial.</p>
+
+<p>So the challenge is not simply to bring back the viva.</p>
+
+<p>It is to find ways of assessing <strong>understanding independently of either AI fluency or human oratorical talent</strong>.</p>
+
+<h2 id="the-anthropomorphism-problem">The anthropomorphism problem</h2>
+
+<p>There is another complication, and it may be even more difficult.</p>
+
+<p>The fluency of AI encourages us to <strong>anthropomorphise the interaction</strong>.</p>
+
+<p>When something responds to us in natural language, remembers the immediate conversational context, asks questions, explains itself and even expresses uncertainty, our ordinary social instincts tend to treat it as a conversational partner.</p>
+
+<p>Language creates the impression of a <em>someone</em> on the other side.</p>
+
+<p>That makes rational evaluation more difficult.</p>
+
+<p>We may start with:</p>
+
+<blockquote>
+  <p>“The system produced a very good explanation.”</p>
+</blockquote>
+
+<p>and unconsciously move toward:</p>
+
+<blockquote>
+  <p>“The system understands this.”</p>
+</blockquote>
+
+<p>and then perhaps toward:</p>
+
+<blockquote>
+  <p>“The system knows this.”</p>
+</blockquote>
+
+<p>Those are not equivalent claims.</p>
+
+<p>The more fluent the interaction becomes, the easier it is to collapse these distinctions.</p>
+
+<p>This is why AI literacy cannot simply mean knowing which buttons to press or how to write a clever prompt.</p>
+
+<p>Students need to learn how to <strong>interrogate the apparent knower</strong>.</p>
+
+<h2 id="a-new-educational-problem">A new educational problem</h2>
+
+<p>Perhaps this is the deeper educational question created by generative AI.</p>
+
+<p>We have traditionally designed education around the assumption that language is evidence of a person’s internal cognitive state.</p>
+
+<p>If a student writes a good essay, answers a question intelligently, explains a concept and defends an argument, we infer understanding.</p>
+
+<p>That inference is imperfect, but it has generally been useful.</p>
+
+<p>AI disrupts the inference.</p>
+
+<p>Now the production of fluent language can be separated from the acquisition of the knowledge that the language appears to express.</p>
+
+<p>The educational problem therefore shifts from:</p>
+
+<blockquote>
+  <p><strong>Can the student produce the answer?</strong></p>
+</blockquote>
+
+<p>to:</p>
+
+<blockquote>
+  <p><strong>What evidence would justify attributing understanding to the student?</strong></p>
+</blockquote>
+
+<p>That is a much more interesting question.</p>
+
+<p>And it is fundamentally epistemological.</p>
+
+<h2 id="hence-philosophy-of-language">Hence: Philosophy of Language</h2>
+
+<p>This brings me back to my original recommendation to AI educators:</p>
+
+<p><strong>Acquire some Philosophy of Language credits.</strong></p>
+
+<p>If AI’s extraordinary capability is its fluency in our language, educators need to understand more than how to use that fluency. They need to think seriously about <strong>language, meaning, reference, understanding, communication and knowledge</strong>.</p>
+
+<p>Philosophy of Language will not give us a magic test for determining whether an AI—or a student—really understands.</p>
+
+<p>But it can make us much more careful about the assumptions we bring to that judgment.</p>
+
+<p>And perhaps that is exactly what education needs at this point.</p>
+
+<p>The technology has arrived.</p>
+
+<p><strong>The ontology came first.</strong></p>
+
+<p>Now our <strong>epistemology has to catch up—and our pedagogy will have to follow.</strong></p>]]></content><author><name>Abid Nasim</name></author><category term="Philosophy" /><category term="AI" /><category term="Language" /><category term="Education" /><summary type="html"><![CDATA[As with any genuinely new technology, ontology precedes epistemology — and pedagogy follows.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://nasim.us/assets/content/blogs/AI/ontology-epistemology-pedagogy.jpg" /><media:content medium="image" url="https://nasim.us/assets/content/blogs/AI/ontology-epistemology-pedagogy.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Greek Philosophy from Athens to Bukhara via Aleppo</title><link href="https://nasim.us/blog/athen2bukhara/" rel="alternate" type="text/html" title="Greek Philosophy from Athens to Bukhara via Aleppo" /><published>2026-05-07T00:00:00-07:00</published><updated>2026-05-07T00:00:00-07:00</updated><id>https://nasim.us/blog/athen2bukhara</id><content type="html" xml:base="https://nasim.us/blog/athen2bukhara/"><![CDATA[<h2 id="from-athens-to-bukhara-the-remarkable-journey-of-greek-philosophy">From Athens to Bukhara: The Remarkable Journey of Greek Philosophy</h2>
 
 <p><strong>Al-Farabi</strong> (c. 870–950 CE / 257–339 AH), known as the <strong>Second Teacher</strong> (<em>Mu‘allim al-Thani</em>) after Aristotle, and <strong>Ibn Sina</strong> (980–1037 CE / 370–428 AH), the brilliant polymath from Bukhara, stand as two towering figures in the transmission of Greek philosophy.</p>
 
@@ -515,67 +719,4 @@ Designed a store-and-forward pattern: PMS transactions queued locally on each sh
 
 <h2 id="key-takeaway">Key takeaway</h2>
 
-<p><strong>Integration at sea is integration at the edge.</strong> Designing for disconnected operation, bandwidth constraints, and multi-jurisdictional compliance made this project a masterclass in resilient architecture.</p>]]></content><author><name>Abid Nasim</name></author><category term="Integration" /><category term="GIS" /><category term="BizTalk" /><category term="Dynamics CRM" /><category term="AS/400" /><summary type="html"><![CDATA[Integrated a new Property Management System across 30+ cruise ships, with GIS-based customs reporting, Dynamics CRM build automation, and AS/400 host integration.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://nasim.us/assets/content/work/cruise-fleet.svg" /><media:content medium="image" url="https://nasim.us/assets/content/work/cruise-fleet.svg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Full SME ERP Solution — Elahi Electronics</title><link href="https://nasim.us/work/sme-erp-elahi-electronics/" rel="alternate" type="text/html" title="Full SME ERP Solution — Elahi Electronics" /><published>2026-04-12T09:30:00-07:00</published><updated>2026-04-12T09:30:00-07:00</updated><id>https://nasim.us/work/sme-erp-elahi-electronics</id><content type="html" xml:base="https://nasim.us/work/sme-erp-elahi-electronics/"><![CDATA[<h2 id="context">Context</h2>
-
-<p>In mid-2009, Elahi Electronics — a growing SME in the electronics distribution space — needed a full Enterprise Resource Planning (ERP) system. Off-the-shelf ERP solutions were priced for enterprises, well beyond their budget. I was engaged to architect and build a custom ERP from the ground up, spanning customer management, orders, billing, vendor management, treasury, HR, and supply chain.</p>
-
-<p>The project ran for 18 months, from June 2009 through November 2010, with a small team that I led as Architect and Lead Developer.</p>
-
-<h2 id="goal">Goal</h2>
-
-<blockquote>
-  <p>Build a complete, custom ERP for an SME — from authentication to business intelligence — using the Microsoft stack.</p>
-</blockquote>
-
-<p>The ERP had to deliver:</p>
-
-<ul>
-  <li>Role-based authentication and authorization via SharePoint Forms-Based Authentication (FBA)</li>
-  <li>A rich client experience with Silverlight and WCF RIA Services</li>
-  <li>Enterprise search with FAST Search for SharePoint (FS4SP), including multi-language support</li>
-  <li>Business Intelligence with SQL Server Analysis Services (SSAS) cubes</li>
-  <li>Integration with Dynamics CRM, Dynamics AX, and MQSeries via BizTalk 2009</li>
-  <li>Smart Document tags that linked reports to live ERP data</li>
-</ul>
-
-<h2 id="approach">Approach</h2>
-
-<ol>
-  <li>
-    <p><strong>Portal &amp; Authentication</strong><br />
-Built the ERP portal on SharePoint Server 2010. Implemented Forms-Based Authentication (FBA) with role-based access, ensuring that warehouse staff, sales, and finance each saw only their relevant modules.</p>
-  </li>
-  <li>
-    <p><strong>Rich Client with Silverlight</strong><br />
-Developed the primary client interface in Silverlight 4, using WCF RIA Services for client-server communication. The Silverlight client supported real-time data grids, drag-and-drop order assembly, and interactive dashboards — far beyond what was possible with ASP.NET WebForms at the time.</p>
-  </li>
-  <li>
-    <p><strong>FAST Enterprise Search</strong><br />
-Configured FAST Search for SharePoint (FS4SP) to index all ERP entities — customers, products, orders, invoices. Extended it with custom linguistics to translate product descriptions between English and regional languages. Integrated Smart Document Tags so that Word documents could pull live ERP data.</p>
-  </li>
-  <li>
-    <p><strong>Business Intelligence</strong><br />
-Built SSAS cubes for sales analysis, inventory turnover, and financial forecasting. SSIS packages handled ETL from the operational database to the data warehouse nightly.</p>
-  </li>
-  <li>
-    <p><strong>Integration Fabric</strong><br />
-BizTalk 2009 connected the ERP to Dynamics CRM (for sales), Dynamics AX (for finance), and MQSeries (for external partner communications).</p>
-  </li>
-</ol>
-
-<h2 id="challenges">Challenges</h2>
-
-<ul>
-  <li>Silverlight’s client-side processing model required careful data-loading strategies — eager loading caused UI freezes, lazy loading caused N+1 query problems.</li>
-  <li>FAST Search linguistics customization was poorly documented; extending keyword stemming and thesaurus for non-English languages required trial and error.</li>
-  <li>SSAS cube processing on the SME’s modest hardware required aggressive partition strategies to keep processing windows under 2 hours.</li>
-  <li>The client’s business processes evolved during development — the architecture had to absorb change without constant rewrites.</li>
-</ul>
-
-<h2 id="outcome">Outcome</h2>
-
-<p>The ERP went into production serving 50+ concurrent users across sales, warehouse, finance, and management. The Silverlight client, while a technology that would later be deprecated by Microsoft, provided a genuinely modern experience in 2010. The FAST search integration reduced document retrieval time from minutes to sub-second queries.</p>
-
-<h2 id="key-takeaway">Key takeaway</h2>
-
-<p><strong>Building an ERP for an SME means building for evolution.</strong> Unlike enterprise ERP rollouts with fixed requirements, an SME’s processes change as they grow. Designing for extensibility — pluggable modules, metadata-driven forms, configurable workflows — was the difference between success and a permanent maintenance burden.</p>]]></content><author><name>Abid Nasim</name></author><category term="ERP" /><category term="Silverlight" /><category term="SharePoint" /><category term="SSAS" /><category term="BizTalk" /><summary type="html"><![CDATA[Architected and delivered a complete ERP solution for a Small & Medium Enterprise, spanning BI, CRM, SharePoint portals, and Silverlight-based rich client applications.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://nasim.us/assets/content/work/sme-erp.svg" /><media:content medium="image" url="https://nasim.us/assets/content/work/sme-erp.svg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+<p><strong>Integration at sea is integration at the edge.</strong> Designing for disconnected operation, bandwidth constraints, and multi-jurisdictional compliance made this project a masterclass in resilient architecture.</p>]]></content><author><name>Abid Nasim</name></author><category term="Integration" /><category term="GIS" /><category term="BizTalk" /><category term="Dynamics CRM" /><category term="AS/400" /><summary type="html"><![CDATA[Integrated a new Property Management System across 30+ cruise ships, with GIS-based customs reporting, Dynamics CRM build automation, and AS/400 host integration.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://nasim.us/assets/content/work/cruise-fleet.svg" /><media:content medium="image" url="https://nasim.us/assets/content/work/cruise-fleet.svg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
