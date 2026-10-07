@@ -125,7 +125,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <span class="reader-tools-label">Text size <span id="reader-font-value" class="reader-tools-value">100%</span></span>
       <div class="reader-tools-buttons">
         <button type="button" id="reader-font-decrease" aria-label="Decrease text size">A−</button>
-        <button type="button" id="reader-font-reset" aria-label="Reset text size">Reset</button>
+        <button type="button" id="reader-font-reset" aria-label="Reset">Reset</button>
         <button type="button" id="reader-font-increase" aria-label="Increase text size">A+</button>
       </div>
     </div><div class="reader-tools-row">
@@ -133,7 +133,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <select id="reader-font-select" class="reader-font-select"><option value="'Public Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">Public Sans (default)</option><option value="'Lora', Georgia, 'Times New Roman', serif">Lora (serif)</option><option value="'Atkinson Hyperlegible', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">Atkinson Hyperlegible</option></select>
     </div><div class="reader-tools-row">
       <span class="reader-tools-label">Width</span>
-      <div class="reader-tools-buttons" role="group" aria-label="Reading width">
+      <div class="reader-tools-buttons" role="group" aria-label="Width">
         <button type="button" id="reader-width-normal" aria-pressed="true">Normal</button>
         <button type="button" id="reader-width-wide" aria-pressed="false">Wide</button>
       </div>
@@ -157,6 +157,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <label class="reader-tools-toggle-row" for="reader-focus-mode">
         <input type="checkbox" id="reader-focus-mode">
         Focus mode (hide distractions)
+      </label>
+    </div>
+
+    <div class="reader-tools-row">
+      <label class="reader-tools-toggle-row" for="reader-hide-cover">
+        <input type="checkbox" id="reader-hide-cover">
+        Hide cover image
       </label>
     </div>
 
@@ -185,6 +192,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   var relaxedCheckbox = document.getElementById("reader-relaxed-spacing");
   var underlineCheckbox = document.getElementById("reader-underline-links");
   var focusCheckbox = document.getElementById("reader-focus-mode");
+  var hideCoverCheckbox = document.getElementById("reader-hide-cover");
 
   function readStoredIndex() {
     var raw = localStorage.getItem("readerFontStepIndex");
@@ -244,6 +252,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     }
   }
 
+  function applyHideCover(enabled) {
+    root.classList.toggle("reading-hide-cover", enabled);
+    localStorage.setItem("readerHideCover", enabled ? "1" : "0");
+    hideCoverCheckbox.checked = enabled;
+  }
+
   function updateProgress() {
     // The progress line is rendered after this script in the document
     // (see _includes/header.html), so it is resolved on demand rather than at
@@ -285,6 +299,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   applyRelaxedSpacing(localStorage.getItem("readerRelaxedSpacing") === "1");
   applyUnderlineLinks(localStorage.getItem("readerUnderlineLinks") === "1");
   applyFocus(localStorage.getItem("readerFocus") === "1");
+  applyHideCover(localStorage.getItem("readerHideCover") === "1");
 
   toggle.addEventListener("click", function () {
     var isOpen = !panel.hidden;
@@ -332,6 +347,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   focusCheckbox.addEventListener("change", function () {
     applyFocus(focusCheckbox.checked);
+  });
+
+  hideCoverCheckbox.addEventListener("change", function () {
+    applyHideCover(hideCoverCheckbox.checked);
   });
 
   // Focus mode: the floating button and the Esc key both leave it; a thin
