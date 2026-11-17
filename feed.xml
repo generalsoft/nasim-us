@@ -1,4 +1,190 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://nasim.us/feed.xml" rel="self" type="application/atom+xml" /><link href="https://nasim.us/" rel="alternate" type="text/html" hreflang="en" /><updated>2026-10-20T22:05:46-07:00</updated><id>https://nasim.us/feed.xml</id><title type="html">Abid Nasim</title><subtitle>Personal site of Abid Nasim (US)</subtitle><author><name>Abid Nasim</name></author><entry><title type="html">Hidden History by Joram Van Klaveren</title><link href="https://nasim.us/blogs/hiddenhistory/" rel="alternate" type="text/html" title="Hidden History by Joram Van Klaveren" /><published>2026-10-20T18:30:00-07:00</published><updated>2026-10-20T18:30:00-07:00</updated><id>https://nasim.us/blogs/hidden-history</id><content type="html" xml:base="https://nasim.us/blogs/hiddenhistory/"><![CDATA[<h1 id="hidden-history-30-stories-of-islams-connections-with-the-west">Hidden History: 30 Stories of Islam’s Connections with the West</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://nasim.us/feed.xml" rel="self" type="application/atom+xml" /><link href="https://nasim.us/" rel="alternate" type="text/html" hreflang="en" /><updated>2026-11-16T17:05:11-08:00</updated><id>https://nasim.us/feed.xml</id><title type="html">Abid Nasim</title><subtitle>Personal site of Abid Nasim (US)</subtitle><author><name>Abid Nasim</name></author><entry><title type="html">My speech at UAE Innovates 2026</title><link href="https://nasim.us/blogs/speech-1117/" rel="alternate" type="text/html" title="My speech at UAE Innovates 2026" /><published>2026-11-16T16:00:00-08:00</published><updated>2026-11-16T16:00:00-08:00</updated><id>https://nasim.us/blogs/speech-uae-innovates-2026</id><content type="html" xml:base="https://nasim.us/blogs/speech-1117/"><![CDATA[<h1 id="ai-soup-to-nuts-the-express-edition">AI, Soup to Nuts: The Express Edition</h1>
+
+<p>Excellencies, ladies and gentlemen.</p>
+
+<p>It is a great honor to be here. I thank the organizers for the opportunity to share my thoughts with such a distinguished forum.</p>
+
+<p>Today’s topic is AI, soup to nuts. The express edition. Express, because the full version is a two-day, four-session workshop, which you can find on our website. This is the condensed version, and I’ve kept the good parts.</p>
+
+<p>You’ll notice there are no slides. That is deliberate. I will tell you why before I finish. Consider it a small mystery to carry with you for the next half hour.</p>
+
+<p>I got my first computer in 1982. It had one thousand bytes of memory. Not kilobytes. Not megabytes. One thousand bytes.</p>
+
+<p>When I switched it on, the system took three hundred of them for itself and left me seven hundred. My days and nights were lived inside those seven hundred bytes. A single photo on your phone today is several million bytes. I had seven hundred.</p>
+
+<p>Later I did an internship at IBM, with access to minicomputers and microcomputers, and my main job was to organize their massive libraries and update the manuals. Which meant I read everything.</p>
+
+<p>There was a time in my life when I knew everything about computers. Ask me what pin 23 on the parallel port does, and I could have told you. Then the field grew faster than any one head could hold. So I specialized, and I specialized in integrations: making one system talk to another that was never designed to talk to it.</p>
+
+<p>That is why I was an AI skeptic, even while I worked on AI projects, machine translation and context detection. When you spend your life making systems agree with each other, you develop an allergy to anything that sounds impressive and cannot be verified.</p>
+
+<p>Hold that thought. We will come back to it.</p>
+
+<p>First, the history. And it is a story of hope, heartbreak, and stubborn believers.</p>
+
+<p>Seventy years ago, a handful of scientists gathered in a quiet New Hampshire college town, Dartmouth, and made a bold bet: that thinking itself could be built from machinery.</p>
+
+<p><strong>1956.</strong> A young professor, John McCarthy, needed a name for this strange new dream. He coined two words that would echo through history: <em>Artificial Intelligence.</em> McCarthy went on to win the Turing Award, the Nobel Prize of computing, in 1971, and he invented LISP, one of the first programming languages built for AI. He later recalled choosing the name partly to set the field apart from cybernetics, the then-popular science of self-correcting machines.</p>
+
+<p>The promise was breathtaking. Some founders believed machines would match human intelligence within a generation.</p>
+
+<p>They were off by a few decades. Or a few more than that.</p>
+
+<p><strong>1958.</strong> Frank Rosenblatt, a psychologist, built the <strong>perceptron</strong>, the first machine that could <em>learn</em>.</p>
+
+<p>Normally, a computer does exactly what a programmer tells it. The perceptron was different. You showed it examples, and it adjusted itself, like a child learning to tell a cat from a dog by seeing many of each. It was loosely modeled on the brain’s neurons, so it was the first <strong>neural network</strong>: a web of simple connected units that, together, can learn patterns.</p>
+
+<p>The newspapers went wild. One report predicted a machine that would walk, talk, see, and be conscious of its own existence.</p>
+
+<p>It was far too soon.</p>
+
+<p><strong>The 1970s.</strong> Reality arrived. The perceptron turned out to be very limited, and the computers of the day were laughably weak. Funding dried up. Researchers left. Historians call this the first <strong>AI Winter</strong>: a long, cold stretch where the dream went dormant, and saying “neural networks” in a grant proposal could end your career.</p>
+
+<p>Rosenblatt never saw the thaw. He died in a boating accident in 1971, on his forty-third birthday.</p>
+
+<p>But a few believers refused to let the fire die.</p>
+
+<p><strong>1986.</strong> Those believers got their tool: <strong>backpropagation</strong>. It is simpler than it sounds. Imagine learning archery. You shoot, you miss to the left, you adjust your aim a little to the right. Backpropagation does exactly that, for a network with millions of tiny dials. When the network gets an answer wrong, the error flows backward through the system, and every dial is nudged in the right direction. Repeat that millions of times, and the network gets good.</p>
+
+<p><strong>The 1990s.</strong> And yet winter returned. The networks were too small, the data too scarce, the computers too slow. The believers, a small band including Geoffrey Hinton, Yann LeCun, and Yoshua Bengio, kept working anyway. For years. With almost no recognition.</p>
+
+<p><strong>2006.</strong> Hinton showed that networks with many layers, stacked like floors of a skyscraper, could be trained effectively. Each layer learns something more abstract than the last: the first sees edges, the next sees shapes, the next sees faces. They gave it a new name to shake off the old stigma: <strong>deep learning.</strong></p>
+
+<p><strong>2012.</strong> Then everything broke open. Every year, researchers competed in <strong>ImageNet</strong>, a contest to teach computers to recognize objects in over a million photographs. Progress had been slow. Then a network called <strong>AlexNet</strong> entered, powered by graphics chips built for video games, and crushed the field.</p>
+
+<p>It was a <strong>convolutional neural network</strong>, a design inspired by the eye, scanning an image piece by piece, like sweeping a flashlight across a dark room. And it proved something crucial: <em>this approach scales.</em> More data, more computing power, better results. That lesson launched a revolution.</p>
+
+<p><strong>2017.</strong> A team at Google published a paper with a wonderfully bold title: <em>“Attention Is All You Need.”</em> It introduced the <strong>transformer.</strong></p>
+
+<p>Here is what that means. Read this sentence: “The trophy didn’t fit in the suitcase because it was too big.” What is “it”? The trophy. Your brain connected “it” back to the right word instantly. A transformer does that with a mechanism called <strong>attention</strong>: for every word, it looks at all the other words <em>at once</em> and decides which ones matter. Older systems read one word at a time, like reading through a keyhole. The transformer reads the whole page in a single glance, and can be trained far faster on far more data.</p>
+
+<p>The “T” in ChatGPT? Transformer.</p>
+
+<p><strong>2022.</strong> AI walked out of the laboratory. <strong>Generative AI</strong>, AI that doesn’t just analyze but <em>creates</em>, writing, painting, coding, conversing, reached everyone. Within weeks, millions of people were talking to machines that talked back.</p>
+
+<p><strong>2024.</strong> And then the Swedish Academy gave the Nobel Prize in Physics to John Hopfield and Geoffrey Hinton. Physics? For artificial intelligence? Yes: their networks were built on ideas from the physics of many interacting particles. The Chemistry prize went to AI too, for predicting the shapes of proteins.</p>
+
+<p>Now think about what a Nobel is for. Alfred Nobel’s will asks for work of the greatest benefit to humankind. And here is the irony. The man who won it for building this technology spends much of his time warning us about it. Geoffrey Hinton is often described as an AI doomer.</p>
+
+<p>When the inventor warns you, a skeptic should at least listen.</p>
+
+<p>Why did 2022 feel so different from 2012? AlexNet could recognize a cat. Nobody threw a party. What changed is that AI learned to speak <em>our language</em>, and I believe much of AI’s wow factor comes from the power of human language itself.</p>
+
+<p>Three philosophers, long before any computer could speak, mapped the ground AI now stands on.</p>
+
+<p><strong>Gottlob Frege</strong>, the German who invented modern logic, is associated with the idea that meaning is built from parts: a sentence is made of pieces, and its meaning comes from the pieces and how they fit. Language has structure, and structure can be learned.</p>
+
+<p><strong>Ludwig Wittgenstein</strong> said a word means what it is <em>used for</em>. Language is a set of games people play together: asking, joking, promising, thanking. An AI trained on billions of human conversations is, in a strange way, the largest language game ever played.</p>
+
+<p><strong>John Searle</strong> reminded us that language is <em>action</em>. When you say “I promise,” or “please book this flight,” you are not describing something. You are doing something. Language is how humans make things happen.</p>
+
+<p>Put those together and you see the point. For the first time, the most powerful technology in history can be controlled with the oldest interface we have: words. No code. No menus. Just a request.</p>
+
+<p>Every earlier computing revolution asked humans to learn the machine’s language. This one is the first to learn ours. That means any human language can be a first-class interface to software.</p>
+
+<p>Searle also gave us a warning. In his famous Chinese Room, a person who speaks no Chinese follows a rulebook to answer Chinese notes perfectly, understanding nothing. Can a machine that speaks flawlessly understand a single word? Many dispute his answer. Honestly, nobody knows yet.</p>
+
+<p>Which brings me to the skeptic in me.</p>
+
+<p><strong>First: truth.</strong> A language model is trained to produce plausible text. Truth is not in the objective. It is indifferent to truth, and it will say something false in the same confident voice as something true. That is why serious systems need <em>external validation</em>: databases, calculators, tests, and humans checking the output. Even Yann LeCun, one of the three godfathers I mentioned, argues that language models alone are not enough, and has championed an alternative called JEPA. In plain terms: models that build an internal picture of how the world works, rather than just predicting the next word.</p>
+
+<p><strong>Second: notice where AI shines.</strong> Coding and mathematics. Why? Because code either runs or it doesn’t, and a proof either checks or it doesn’t. These fields come with a built-in referee. In a sense they carry an implicit worldview inside them: a definition of “correct.” Where there is no referee, in medicine, law, history, ethics, we have to supply one.</p>
+
+<p><strong>Third: alignment.</strong> In my view, language models cannot be fully aligned with human values until we understand how the human moral code actually works. And we do not. Philosophers have argued about it for two and a half thousand years. A guardrail made of words can be talked around with more words. That is my opinion, and some in this room will disagree, but every jailbreak you read about is a data point.</p>
+
+<p><strong>Fourth: scale.</strong> Most of the funding, an astonishing amount, has gone to one bet: that language models keep improving simply by getting bigger. There are signs that bet is paying less than it once did. When one road narrows, the smart traveler looks for another.</p>
+
+<p><strong>Fifth, a puzzle I’ll leave with you.</strong> A language model is made of billions of numbers called weights. The popular explanation says it’s all statistics, that these numbers are precise probabilities. But engineers now shrink models by squeezing every number down to a handful of values, and in the extreme, just three: minus one, zero, plus one. Yes, no, maybe. If these numbers were precise statistical quantities, that should wreck the model. Often it barely scratches it.</p>
+
+<p>So what are these weights? Meaningful quantities? Or merely coordinates in a computational space, where position and order matter more than exact size? I don’t know. That is what a young technology looks like. It works before we can fully say why.</p>
+
+<p><strong>And finally, the scary word: hard takeoff.</strong> The idea is that once AI can improve its own design, progress stops being a climb and becomes a launch. Each version builds a better next version, faster. If that ever happens, a lead of a few months at the frontier could become a lead nobody can close. I am not predicting it. I am telling you that the people building the frontier take the possibility seriously, and that is why governments watch this race the way they once watched the space race.</p>
+
+<p>Every limit I just named is a job description.</p>
+
+<ul>
+  <li>
+    <p><strong>Prompts.</strong> People who know how to ask. Language is the new interface, and asking well is a skill.</p>
+  </li>
+  <li>
+    <p><strong>Guardrails.</strong> People who test, attack, and build the external checks that keep these systems honest.</p>
+  </li>
+  <li>
+    <p><strong>Performance.</strong> People who measure and improve: faster, cheaper, more accurate.</p>
+  </li>
+  <li>
+    <p><strong>Training.</strong> People who curate the data and teach the models what good looks like.</p>
+  </li>
+  <li>
+    <p><strong>Worldviews.</strong> The strangest and perhaps the most important: people who encode what “correct” means in a domain. A banker’s rules. A physician’s standard of care. A scholar’s canon. In every language.</p>
+  </li>
+</ul>
+
+<p>A technology that is indifferent to truth creates a profession for people who care about it.</p>
+
+<p>For decades we were trained to “think outside the box.” It was a corporate mantra. Workshops, posters, an entire industry.</p>
+
+<p>Well, the machines have arrived, and they think outside the box all day long. Ask a language model for a wild idea, and you’ll have ten before your coffee cools. Novelty has become cheap.</p>
+
+<p>And what is a slide deck? A slide deck <em>is</em> the box. A title, three bullet points, a summary. A language model can produce a perfectly respectable deck in thirty seconds.</p>
+
+<p>So I decided to do the one thing that is still ours: stand here with nothing between us, and tell you what I actually think.</p>
+
+<p>Every computing wave found its killer app, and each one surprised everyone.</p>
+
+<p>For the earliest computers, it was the census. For the personal computer, it was the spreadsheet, VisiCalc. For the Mac, it was desktop publishing. In each case the machine came first, and the reason to buy it came later.</p>
+
+<p>For AI, I believe the killer app is the interface itself: talking to software in your own language.</p>
+
+<p>Where should capital go? I’m not an investment adviser, so let me offer a map rather than a tip. There are layers:</p>
+
+<ul>
+  <li>
+    <p><strong>Chips, data centers, energy.</strong> The shovels. Essential, and enormously expensive.</p>
+  </li>
+  <li>
+    <p><strong>Foundation models.</strong> A few winners, at great cost.</p>
+  </li>
+  <li>
+    <p><strong>Data.</strong> High-quality, well-curated data, especially in languages the big models serve poorly, is scarce, and scarcity is value.</p>
+  </li>
+  <li>
+    <p><strong>Applications.</strong> Where real people have real problems, and where the money is finally earned.</p>
+  </li>
+  <li>
+    <p><strong>People.</strong> The five professions I just described.</p>
+  </li>
+</ul>
+
+<p>In every wave, the winners were those who solved a specific person’s specific problem, in that person’s own terms. Which brings me to my last big idea.</p>
+
+<p>We need to build Arabic-first language models. If nothing else, for a full-spectrum ecosystem: models, tools, data, talent, and products in the language of more than four hundred million people.</p>
+
+<p>I’m not the first to say it. Falcon and Jais from the UAE, ALLaM from Saudi Arabia, and Qatar’s Fanar have already proven that Arabic-first can work. The opportunity now is the next layer: depth in specific fields, dialects, real applications, and, here is my bet, the tokenizer itself.</p>
+
+<p>A quick explanation. AI doesn’t read words. It reads <strong>tokens</strong>, small chunks of text, like Lego bricks. The word “unbelievable” might be three bricks. Everything the model reads, writes, and charges you for is counted in bricks. And the standard set of bricks was designed mostly by English speakers, for English.</p>
+
+<p>Now look at Arabic. English is a wordy language. Arabic is not. One Arabic word, <em>wa-sa-yaktubūnahā</em>, means “and they will write it.” Six English words, packed into one.</p>
+
+<p>Arabic is also an <strong>abjad</strong>: the consonants are written, the short vowels are left for the reader to supply. We do it effortlessly. A machine has to guess. And Arabic is built on roots. Three letters, k-t-b, the idea of writing, woven into patterns that give us a writer, a book, a library, a letter. That root system has stayed remarkably stable for well over a thousand years.</p>
+
+<p>So you would expect Arabic to be cheap for AI. With English-cut bricks, it is the opposite: the machine shatters the dense Arabic word into fragments. The more compact the language, the more it is punished.</p>
+
+<p>That is not a flaw in Arabic. It is a flaw in the tools, and that is the opportunity. Imagine a tokenizer that reads Arabic the way an Arabic speaker does: roots, patterns, and attached prefixes, not random fragments. My working estimate is a saving of fifteen to thirty percent in tokens, and therefore in cost and speed. It is an estimate. I would welcome anyone here to help me test it. Nobody has proven the root-based approach at scale yet, and that is exactly why it is worth building.</p>
+
+<p>Remember Frege, Wittgenstein, and Searle. If language is the interface, then the quality of the interface in <em>your</em> language decides who benefits from this revolution.</p>
+
+<p>Let me return to where I began. Seven hundred bytes.</p>
+
+<p>Today’s models hold billions of numbers. But the lesson of my seven hundred bytes has not changed: constraints force you to think, and the people who change the world are the ones who keep thinking when the field goes cold.</p>
+
+<p>That is the story of AI. Two winters. Decades of believers, ignored and underfunded, until the world caught up. A technology that learned our language, and that we still do not fully understand, and that I, a lifelong skeptic, now believe is real.</p>
+
+<p>So my advice is simple. Stay skeptical, because truth still needs people who care about it. Stay curious, because we do not yet know why these things work. And build, in your own language, because nobody will build it for you.</p>
+
+<p>The next chapter is being written right now. Perhaps some of us in this room will write it, in Arabic.</p>
+
+<p>Thank you.</p>]]></content><author><name>Abid Nasim</name></author><category term="Speech" /><category term="AI" /><category term="Exhibition" /><summary type="html"><![CDATA[Speech edition of my AI course "Soup to Nuts" delivered at UAE Innovates 2026 event in RAK, UAE.]]></summary></entry><entry><title type="html">Hidden History by Joram Van Klaveren</title><link href="https://nasim.us/blogs/hiddenhistory/" rel="alternate" type="text/html" title="Hidden History by Joram Van Klaveren" /><published>2026-10-20T18:30:00-07:00</published><updated>2026-10-20T18:30:00-07:00</updated><id>https://nasim.us/blogs/hidden-history</id><content type="html" xml:base="https://nasim.us/blogs/hiddenhistory/"><![CDATA[<h1 id="hidden-history-30-stories-of-islams-connections-with-the-west">Hidden History: 30 Stories of Islam’s Connections with the West</h1>
 
 <p><em>A reader-friendly overview of Joram van Klaveren’s</em> <em>Vergeten Verleden</em></p>
 
@@ -1073,68 +1259,4 @@ Built OLAP cubes with SQL Server 2005 Analysis Services and exposed them through
 
 <h2 id="key-takeaway">Key takeaway</h2>
 
-<p><strong>An ESB is only as good as its canonical model.</strong> Investing heavily in the message schema upfront paid dividends every time a new system joined the bus. Governance isn’t overhead — it’s the product.</p>]]></content><author><name>Abid Nasim</name></author><category term="Banking" /><category term="ESB" /><category term="BizTalk" /><category term="SQL Server" /><category term="SharePoint" /><summary type="html"><![CDATA[Architected and implemented an Enterprise Service Bus integrating Microsoft Dynamics, SQL Server, BizTalk, and SharePoint for a large financial institution.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://nasim.us/assets/content/work/esb-banking.svg" /><media:content medium="image" url="https://nasim.us/assets/content/work/esb-banking.svg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Multi-Cloud IoT &amp;amp; Big Data Proof of Concept</title><link href="https://nasim.us/work/multicloud-iot-poc/" rel="alternate" type="text/html" title="Multi-Cloud IoT &amp;amp; Big Data Proof of Concept" /><published>2026-04-18T14:00:00-07:00</published><updated>2026-04-18T14:00:00-07:00</updated><id>https://nasim.us/work/multicloud-iot-poc</id><content type="html" xml:base="https://nasim.us/work/multicloud-iot-poc/"><![CDATA[<h2 id="context">Context</h2>
-
-<p>In early 2017, I was tasked with building a comprehensive set of Proof of Concepts (POCs) to evaluate cloud platforms for IoT, Big Data, and Machine Learning workloads. The goal was to compare Azure, AWS, GCP, IBM Bluemix (now IBM Cloud), and Alibaba Cloud across identical use cases — then recommend a strategic cloud adoption roadmap.</p>
-
-<p>The POCs spanned edge computing (Raspberry Pi with LTE), message brokers (MQTT on Facebook, Azure, Adafruit IO), data lakes, and machine learning pipelines.</p>
-
-<h2 id="goal">Goal</h2>
-
-<blockquote>
-  <p>Evaluate and compare five cloud platforms for IoT ingestion, Big Data processing, and Machine Learning — using real hardware and real data.</p>
-</blockquote>
-
-<p>Success criteria:</p>
-
-<ul>
-  <li>Ingest telemetry from physical Raspberry Pi devices over SigFox and LoRaWAN</li>
-  <li>Process streaming data with Hadoop (HDFS, Yarn, MapReduce)</li>
-  <li>Build Data Lake pipelines with Azure Data Factory and AWS Glue</li>
-  <li>Train and deploy ML models on each platform</li>
-  <li>Automate IaaS lab management for reproducible environments</li>
-</ul>
-
-<h2 id="approach">Approach</h2>
-
-<p>I ran identical workloads across all platforms:</p>
-
-<ol>
-  <li>
-    <p><strong>Edge Layer</strong><br />
-Flashed Raspberry Pi devices with Raspbian, connected LTE modems, and configured SigFox and LoRaWAN gateways. Each Pi published MQTT messages to platform-specific brokers — Azure IoT Hub, AWS IoT Core, IBM Watson IoT, and Adafruit IO.</p>
-  </li>
-  <li>
-    <p><strong>Stream Ingestion</strong><br />
-MQTT telemetry was routed to each platform’s streaming engine: Azure Stream Analytics, AWS Kinesis, Google Cloud Dataflow, and IBM Streaming Analytics. Latency and throughput were measured under identical payload sizes.</p>
-  </li>
-  <li>
-    <p><strong>Data Lake &amp; Big Data</strong><br />
-Landed raw telemetry into each platform’s data lake (Azure Data Lake Store, AWS S3, Google Cloud Storage). Ran Hadoop MapReduce jobs for aggregation and fed results into each platform’s ML service.</p>
-  </li>
-  <li>
-    <p><strong>Machine Learning</strong><br />
-Trained identical regression models (predicting sensor drift) on Azure ML, AWS SageMaker, Google AI Platform, and IBM Watson Studio. Compared training time, deployment latency, and cost.</p>
-  </li>
-  <li>
-    <p><strong>IaaS Automation</strong><br />
-Scripted VM provisioning and teardown using each platform’s CLI/SDK, enabling reproducible lab environments for every test cycle.</p>
-  </li>
-</ol>
-
-<h2 id="challenges">Challenges</h2>
-
-<ul>
-  <li>Cross-platform MQTT broker implementations had subtle differences in QoS (Quality of Service) levels and retained-message behavior.</li>
-  <li>LoRaWAN gateway configuration varied significantly between providers — required custom firmware tweaks on the Raspberry Pi concentrator boards.</li>
-  <li>Hadoop job tuning was platform-specific; Yarn configurations that worked on Azure HDInsight failed on Amazon EMR without adjustment.</li>
-  <li>Cost tracking across five clouds was a project in itself — each platform’s billing model required separate monitoring dashboards.</li>
-</ul>
-
-<h2 id="outcome">Outcome</h2>
-
-<p>The evaluation produced a 120-page recommendation report adopted by the CTO’s office. Azure was selected as the primary cloud, with AWS as the DR (Disaster Recovery) fallback. The automated lab environment became the company’s standard for future POCs, cutting new-project spin-up from weeks to hours.</p>
-
-<h2 id="key-takeaway">Key takeaway</h2>
-
-<p><strong>Multi-cloud isn’t about avoiding lock-in — it’s about picking the right tool for each job.</strong> IoT ingestion favored Azure, Big Data favored AWS at the time, and ML training was most cost-effective on GCP. The recommendation was pragmatic, not dogmatic.</p>]]></content><author><name>Abid Nasim</name></author><category term="Cloud" /><category term="IoT" /><category term="Big Data" /><category term="Machine Learning" /><category term="Azure" /><summary type="html"><![CDATA[Built cross-cloud IoT, Big Data, and Machine Learning POCs across Azure, AWS, GCP, and IBM Bluemix — from Raspberry Pi edge devices to cloud data lakes.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://nasim.us/assets/content/work/multicloud-iot.svg" /><media:content medium="image" url="https://nasim.us/assets/content/work/multicloud-iot.svg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+<p><strong>An ESB is only as good as its canonical model.</strong> Investing heavily in the message schema upfront paid dividends every time a new system joined the bus. Governance isn’t overhead — it’s the product.</p>]]></content><author><name>Abid Nasim</name></author><category term="Banking" /><category term="ESB" /><category term="BizTalk" /><category term="SQL Server" /><category term="SharePoint" /><summary type="html"><![CDATA[Architected and implemented an Enterprise Service Bus integrating Microsoft Dynamics, SQL Server, BizTalk, and SharePoint for a large financial institution.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://nasim.us/assets/content/work/esb-banking.svg" /><media:content medium="image" url="https://nasim.us/assets/content/work/esb-banking.svg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
